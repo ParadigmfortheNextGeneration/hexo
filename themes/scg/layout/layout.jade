@@ -1,0 +1,14 @@
+doctype html
+html(lang='en-us')
+  head
+    include _head
+  body(itemscope, itemtype='https://schema.org/WebPage')
+    include _browserupgrade.html
+    include _header
+    main(itemscope, itemtype='https://schema.org/Blog')
+      include _content
+    include _scripts
+    script(src='/scripts/vendor/jquery-1.11.2.min.js')
+    script(src='/scripts/vendor/jquery.viewport.mini.js')
+    script(src='/scripts/main.js')
+    
