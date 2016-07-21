@@ -1,6 +1,6 @@
 # config
-logo: /images/svdb.png
-keywords: "Logic, Psychology, Economics, Geopolitics"
+logo: /images/StormCloudsGathering.png
+keywords: "Geopolitics, Logic, Science, Design Philosophy, Permaculture, Psychology, Group Psychology, Primal Psychology, Economic Psychology"
 pubkey:
 menu:
   Home: /
@@ -13,3 +13,8 @@ excerpt_link: Read more
 # Miscellaneous
 rss: /rss.xml
 google_analytics:
+
+# Sidebar
+widgets:
+- links
+- tag
