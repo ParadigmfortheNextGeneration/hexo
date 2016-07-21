@@ -1,7 +1,22 @@
 //- index page
+// - console.log(page.title)
+// - console.log(page);
+- if (page.posts)
+-   var index = page.posts.length 
+
 .main-container
   .main.wrapper.clearfix
     article
+      h1.page-title #{page.title}
       != page.content
-    aside
-      include _aside
+      - if (index)
+          - page.posts.each(function(post) {
+            - var title = post.title
+            - var description = post.description
+              include _excerpt
+          - })
+    if (page.tags)
+      - var tags = page.tags.length  
+    - if (page.links||tags)
+      aside
+        include _aside

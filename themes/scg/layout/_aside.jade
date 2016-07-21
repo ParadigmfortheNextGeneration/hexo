@@ -1,2 +1,8 @@
-- theme.widgets.forEach(function(widget){console.log('_widget/' + widget)});
-p This is the Aside
+// - theme.widgets.forEach(function(widget){console.log('_widget/' + widget)});
+// - console.log(page.tags)
+- if (page.links)
+    include _widgets/links
+    
+    
+- if (page.tags.length && page.show_tags)
+    include _widgets/tags
