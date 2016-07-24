@@ -5,6 +5,7 @@ description: "test description"
 tags: 
 - tests
 - power
+feed_hide: false
 ---
 # This is it folks
 

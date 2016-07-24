@@ -73,6 +73,12 @@ autolinker:
     
 marked:
   gfm: false
+  
+feed:
+  type: rss2
+  path: rss.xml
+  limit: 20
+  hub:  
 
 ## Themes: https://hexo.io/themes/
 theme: scg
