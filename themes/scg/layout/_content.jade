@@ -1,18 +1,24 @@
 //- index page
 // - console.log(page.title)
-// - console.log(page);
-- if (page.posts)
--   var index = page.posts.length 
+- console.log(page.posts);
+- var title = page.title
+- if (page.posts) {
+-   var index = page.posts.length
+-   if (page.tag) {
+-     title = "Posts about " + page.tag[0].toUpperCase() + page.tag.substring(1)
+-   }
+- }
 
 .main-container
   .main.wrapper.clearfix
     article
-      h1.page-title #{page.title}
+      h1.page-title #{title}
       != page.content
       - if (index)
           - page.posts.each(function(post) {
             - var title = post.title
             - var description = post.description
+            - var href = post.slug
               include _excerpt
           - })
     if (page.tags)
