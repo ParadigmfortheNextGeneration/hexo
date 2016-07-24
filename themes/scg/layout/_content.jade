@@ -1,6 +1,6 @@
 //- index page
 // - console.log(page.title)
-- console.log(page.posts);
+// - console.log(page.posts);
 - var title = page.title
 - if (page.posts) {
 -   var index = page.posts.length
@@ -16,9 +16,6 @@
       != page.content
       - if (index)
           - page.posts.each(function(post) {
-            - var title = post.title
-            - var description = post.description
-            - var href = post.slug
               include _excerpt
           - })
     if (page.tags)

@@ -1,5 +1,6 @@
-h3.post-title
-  a(href="/"+post.slug) #{title}
-- if (description) {
-.excerpt_wrap #{description}
-- }
+.excerpt_wrap
+  h3.post-title
+    a(href="/"+post.slug) #{post.title}
+  - if (post.description) {
+  .description_wrap #{post.description}
+  - }
