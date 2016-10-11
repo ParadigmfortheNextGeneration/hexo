@@ -2,7 +2,7 @@
 title: {{ title }}
 description:
 feed_hide: false
-category: misc
+category: psychology
 date: {{ date }}
 tags: 
 - logic

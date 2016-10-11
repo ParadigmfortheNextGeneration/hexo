@@ -1,16 +1,18 @@
-.links-wrap
+.links-wrap.aside-widget
   - if (page.links_title)
     - var links_title = page.links_title
   - else
     - var links_title = theme.links_title
+  - if (page.links_title != 'none') {
   h2 #{links_title}
-  ul
-- page.links.forEach(function(link){
-- var item_array = link.split("||")
-- var item_text = item_array[0]
-- var item_href = item_array[1]
-- var item_rel = item_array[2]
-    li
-      h3.link-title
-        a(href=item_href, rel=item_rel) #{item_text} 
-- });
+  - }  
+  ul.aside-list
+    - page.links.forEach(function(link){
+    - var item_array = link.split("||")
+    - var item_text = item_array[0]
+    - var item_href = item_array[1]
+    - var item_rel = item_array[2]
+        li
+          h3.link-title
+            a(href=item_href, rel=item_rel) !{item_text} 
+    - });

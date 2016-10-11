@@ -1,11 +1,7 @@
 # config
 logo: /images/StormCloudsGathering.png
-keywords: "Logic, Science, History, Geopolitics, Design Philosophy, Permaculture, Psychology, Group Psychology, Primal Psychology, Economic Psychology"
+keywords: "Logic, Science, History, Geopolitics, Psychology, Design Philosophy, Permaculture, Group Psychology, Primal Psychology, Economic Psychology"
 pubkey:
-menu:
-  Home: /
-  Articles: /articles
-  About: /about
 
 # Content
 excerpt_link: Read more
@@ -15,7 +11,4 @@ rss: /rss.xml
 google_analytics:
 
 # Sidebar
-widgets:
-- links
-- 
 links_title: Sources

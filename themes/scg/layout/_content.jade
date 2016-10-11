@@ -1,6 +1,21 @@
 //- index page
 // - console.log(page.title)
 // - console.log(page);
+- if (page.layout == 'page') {
+-  var categories = site.categories.findOne({name: page.category_listing})
+-  if (categories) {
+-     page.posts = categories.posts
+-   }
+- }
+
+- if (page.tags) {
+-   var tags = page.tags.length 
+-  }
+ 
+ 
+- if(page.image) {
+  img(class='lazy', src="/images/"+page.image, alt=page.title)
+- }
 - var title = page.title
 - if (page.posts) {
 -   var index = page.posts.length
@@ -9,17 +24,39 @@
 -   }
 - }
 
+// - var categories = site.categories.findOne({name: 'syria'}).posts
+// - console.log(categories)
+
 .main-container
   .main.wrapper.clearfix
+    - if (page.layout == 'post') {
+    time(datetime=date_xml(page.date), itemprop="datePublished") #{date(page.date, 'MMMM DD, YYYY')}
+    - }
+    h1.page-title #{title}
+    
+    .description !{page.description}
+    - if (page.links) {
     article
-      h1.page-title #{title}
-      != page.content
+      .page-content !{page.content}
+    - }
+    - else {
+    .page-content !{page.content}
+    - }
+        
       - if (index)
           - page.posts.each(function(post) {
               include _excerpt
           - })
-    if (page.tags)
-      - var tags = page.tags.length  
-    - if (page.links||tags)
-      aside
+    - if (page.links) {
+    aside
         include _aside
+    - }
+    
+    - if (page.archive == true) {
+    - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
+      .pagination !{pagination_nav}
+    - }
+    
+    - if (tags && page.show_tags)
+      .tag_wrap
+        include _widgets/tags    

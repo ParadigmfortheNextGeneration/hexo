@@ -3,12 +3,14 @@
         //if theme.logo
           //a(href= config.root)
             //img(src= theme.logo, alt= config.title, title= config.title)
-        h1.title h1.title
+        h1.logo
+          a(href="/") StormCloudsGathering
         nav
           ul
             li.ir
-              a(href='#') nav ul li a
+              a(href='/about') About
             li
-              a(href='#') nav ul li a
+              a(href='/contact') Contact
             li
-              a(href='#') nav ul li a
+              a(href='/donate', class='call-to-action')
+                span Donate

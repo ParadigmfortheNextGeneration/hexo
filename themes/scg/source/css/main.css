@@ -1,5 +1,16 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bebas Neue'), url('../fonts/bebas-neue/BebasNeue.woff') format('woff');
+}
+@font-face {
+  font-family: 'Oswald Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Oswald Medium'), url('../fonts/oswald/Oswald-Medium.woff') format('woff');
+}
 html {
     color: #222;
     font-size: 1em;
@@ -7,12 +18,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ffd500;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #ffd500;
     text-shadow: none;
 }
 
@@ -66,26 +77,128 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    Theme
    =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
+a, a:active, a:visited {
+  color: #FF4400;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav ul li a {
+  color: white;
+}
+h1, h2, h3, h4 {
+  font-family: 'Oswald Medium', sans-serif;
+}
+h1.page-title {
+  font-size: 2.3em;
+  line-height: 1.4em;
+}
+.title {
+    color: #000;
+}
+h1.logo {
+  font-family: 'Bebas Neue', sans-serif;
+}
+h1.logo a {
+  color:red;
+}
+h1.logo {
+  font-size: 27px;
+  margin:23px 0;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+.header-container {
+    border-bottom: 5px solid #ffd500;
+}
+
+.footer-container {
+    border-top: 5px solid red;
 }
 
 .header-container,
-.footer-container,
+.footer-container {
+  background: #000;
+}
 .main aside {
-    background: #f16529;
+    background: #fff;
+}
+.aside-widget h2 {
+  background: black;
+  color: white;
+  padding:10px 20px;
+}
+ul.aside-list {
+  padding:0;
+  margin:0;
+}
+ul.aside-list li {
+  padding-left:0;
+  margin-left: 0;
+  margin-bottom:10px;
+  list-style: none;
+}
+aside ul li h3 {
+  margin:0;
+  padding:0;
+  line-height: 1.2em;
+}
+aside a, aside a:active, aside a:visited {
+  color:black;
 }
 
-.title {
-    color: white;
+time {
+  color:#a7afb3;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family:'Oswald Medium';
+  display:inline;
+}
+.description {
+  font-family:'Oswald Medium';
+  color:#a7afb3;
+  font-size:1.4em;
+}
+
+.page-content {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  line-height: 1.7em;
+}
+
+.tag_wrap {
+  clear:left;
+}
+ul.tag-list {
+  display: inline;
+  padding: 0;
+}
+.tag-list-item {
+  display: inline;
+  background: #666;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px;
+  list-style: none;
+  margin-right:10px;
+}
+.tag-list-item a {
+  color:white;
+}
+.pagination a, .pagination span {
+  display: inline;-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right:10px;
+  background:#ff4400;
+  color: white;
+  font-weight: bold;
+}
+.pagination span {
+  background: #666;
 }
 
 /* ==============
@@ -108,7 +221,13 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #FF4400;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+nav a.call-to-action {
+  background: #4A90E2;
 }
 
 nav a:hover,
@@ -133,7 +252,7 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: black;
     padding: 0px 5% 10px;
 }
 
@@ -149,13 +268,6 @@ nav a:hover {
 .ie7 .title {
     padding-top: 20px;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
 
 
 
@@ -173,17 +285,31 @@ nav a:hover {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
+  
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
 
+    
+
+
+}
+@media only screen and (min-width: 600px) {
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
     nav a {
         float: left;
         width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
+        background: 
     }
 
     nav li:first-child a {
@@ -193,7 +319,22 @@ nav a:hover {
     nav li:last-child a {
         margin-right: 0;
     }
-
+    h1.logo {
+    font-size: 2em;
+  }
+  nav a,
+  nav a.call-to-action {
+    background: none;
+  }
+  .call-to-action span{
+    background: #4A90E2;
+    padding:14px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border:1px solid #0D70E5;
+  }
+}    
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -205,16 +346,13 @@ nav a:hover {
     .oldie nav a {
         margin: 0 0.7%;
     }
-}
-
 @media only screen and (min-width: 768px) {
 
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
-    .main aside {
+    .header-container {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
@@ -224,14 +362,7 @@ nav a:hover {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
+    
 
 /* ============
     WIDE: Main
@@ -396,4 +527,7 @@ nav a:hover {
 img {
     width:100%;
     clear:both;
+}
+.page-content img {
+  margin:10px 0;
 }
