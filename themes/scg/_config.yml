@@ -1,5 +1,5 @@
 # config
-logo: /images/StormCloudsGathering.png
+logo: /images/branding/StormCloudsGathering.jpg
 keywords: "Logic, Science, History, Geopolitics, Psychology, Design Philosophy, Permaculture, Group Psychology, Primal Psychology, Economic Psychology"
 pubkey:
 
@@ -8,7 +8,7 @@ excerpt_link: Read more
 
 # Miscellaneous
 rss: /rss.xml
-google_analytics:
-
-# Sidebar
-links_title: Sources
+twitter: SCGupdates
+google_plus: +StormCloudsGathering
+fb_admins: 511446393
+fb_app_id: 514568561907093

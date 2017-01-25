@@ -11,7 +11,14 @@ meta(name='HandheldFriendly', content='True')
 meta(name='MobileOptimized', content='320')
 meta(name='viewport', content='width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0')
 
+- var og = open_graph(twitter_id=theme.twitter, google_plus=theme.google_plus, fb_admins=theme.fb_admins, fb_app_id=theme.fb_app_id)
+| !{og}
+
+link(rel='icon', href='/images/branding/favicon.ico')
 link(rel='stylesheet', type='text/css', href= config.root + 'css/normalize.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/skeleton.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/font-awesome/css/font-awesome.min.css')
+link(rel='stylesheet', type='text/css', href= config.root + 'css/jquery.sidr.light.min.css')
 link(rel='stylesheet', type='text/css', href= config.root + 'css/main.css')
 
 script(src='scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js')

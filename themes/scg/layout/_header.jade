@@ -1,16 +1,13 @@
 .header-container
       .wrapper.clearfix
-        //if theme.logo
-          //a(href= config.root)
-            //img(src= theme.logo, alt= config.title, title= config.title)
-        h1.logo
-          a(href="/") StormCloudsGathering
+        span(class="icon")
+              a(href='#sidr_menu', title="menu", id="menu_button") <span class="fa fa-bars"></span>
+        if theme.logo
+          a(href= config.root, id="logo")
+            img(src= theme.logo, alt= config.title, title= config.title)
         nav
-          ul
-            li.ir
-              a(href='/about') About
+          ul.menu
             li
-              a(href='/contact') Contact
+              a(href='/donate', class='call-to-action button') <span>Donate</span> <span class="fa fa-heart"></span>
             li
-              a(href='/donate', class='call-to-action')
-                span Donate
+              a(href='#sidr_social', class="button button-primary tooltip" title="Subscribe for Updates", id="social_button")<span>Get Updates</span> <span class="fa fa-share-alt"></span>

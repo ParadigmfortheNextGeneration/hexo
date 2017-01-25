@@ -11,12 +11,16 @@
 - if (page.tags) {
 -   var tags = page.tags.length 
 -  }
+
+ - var content_class = "twelve columns"
+ - if (page.links) {
+ -   content_class = "seven columns"
+ - }
  
- 
-- if(page.image) {
-  img(class='lazy', src="/images/"+page.image, alt=page.title)
+
+- if (page.title) {
+- var title = page.title.replace('-', '<br />')
 - }
-- var title = page.title
 - if (page.posts) {
 -   var index = page.posts.length
 -   if (page.tag) {
@@ -27,36 +31,43 @@
 // - var categories = site.categories.findOne({name: 'syria'}).posts
 // - console.log(categories)
 
-.main-container
-  .main.wrapper.clearfix
-    - if (page.layout == 'post') {
-    time(datetime=date_xml(page.date), itemprop="datePublished") #{date(page.date, 'MMMM DD, YYYY')}
-    - }
-    h1.page-title #{title}
-    
-    .description !{page.description}
-    - if (page.links) {
-    article
-      .page-content !{page.content}
-    - }
-    - else {
-    .page-content !{page.content}
-    - }
+
+- if(page.header_image) {
+  img(class='lazy', data-src="/images/"+page.header_image, alt=page.title)
+- }
+
+- if (page.video) {
+  .featured_video !{page.video}
+- }
+.container
+  - if (!page.hide_title) {
+  h1.page-title !{title}
+  .description !{page.description}
+  - }
+  
+  - if (page.date && (page.layout != 'page')) {
+  time(datetime=date_xml(page.date), itemprop="datePublished") <span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
+  - }
+
+  .content
+    .row
+      div(class=content_class)
+        .page-content !{page.content}    
+        - if (index)
+            - page.posts.each(function(post) {
+                include _excerpt
+            - })
+            
+      - if (page.links) {
+      .five.columns
+          include _aside
+      - }
+      
+    - if (tags && page.show_tags)
+      .tag_wrap
+        include _widgets/tags
         
-      - if (index)
-          - page.posts.each(function(post) {
-              include _excerpt
-          - })
-    - if (page.links) {
-    aside
-        include _aside
-    - }
-    
     - if (page.archive == true) {
     - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
       .pagination !{pagination_nav}
-    - }
-    
-    - if (tags && page.show_tags)
-      .tag_wrap
-        include _widgets/tags    
+    - }    
