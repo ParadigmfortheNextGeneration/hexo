@@ -94,7 +94,17 @@ theme: scg
 exclude_generator:
 - home
 
-# Deployment
+
+thumbnails:
+  profiles:
+    largeThumb:
+      resize:
+        - 600
+        - 600
+    smallThumb:
+      resize:
+        - 455
+        - 455
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:

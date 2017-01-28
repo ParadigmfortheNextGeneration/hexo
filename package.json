@@ -19,6 +19,7 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
+    "hexo-custom-thumbnails": "0.0.6",
     "hexo-uuid": "^1.0.1",
     "twitter-widgets": "^1.0.0"
   }

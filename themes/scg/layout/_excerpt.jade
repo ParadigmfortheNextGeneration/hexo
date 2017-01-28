@@ -1,6 +1,17 @@
-.excerpt_wrap
-  h3.post-title
-    a(href="/"+post.path) #{post.title}
-  - if (post.description) {
-  .description_wrap #{post.description}
+- // console.log();
+- var rightclass = 'twelve columns'
+- if (post.smallThumb) {
+-   rightclass = 'nine columns'
+- }
+
+.excerpt_wrap.row
+  - if (post.smallThumb) {
+  div(class="three columns")
+    img(class="lazy", data-src=post.smallThumb)
   - }
+  div(class=rightclass)
+    h3.post-title
+      a(href="/"+post.path) #{post.title}
+    - if (post.description) {
+    .description_wrap #{post.description}
+    - }

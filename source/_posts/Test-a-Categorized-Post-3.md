@@ -12,6 +12,7 @@ category: syria
 date: 2016-07-24 20:20:00
 description: This had better be good.
 video: https://www.youtube.com/watch?v=1MmfCX2H7N8
+thumbnail: /images/politicians/kaine.jpg
 ---
 Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit. Ut eu ligula.
 
@@ -27,4 +28,7 @@ and...
 
 Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit. Ut eu ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi. Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat, sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam. Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris.
 header_image: politicians/kaine.jpg
+
 ![Kaine is a douche!](/images/politicians/kaine.jpg)
+
+https://twitter.com/PrisonPlanet/status/823985181254156288
