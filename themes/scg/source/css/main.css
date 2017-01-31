@@ -110,11 +110,19 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   word-spacing: -0.2em;
 }
-h1.page-title {
+h1 {
     -moz-osx-font-smoothing: auto;
     font-size:6.5em;
-    
 }
+h2 {
+  font-size:2.8em;
+}
+h3 {
+  font-size: 1.8em;
+  }
+  h3.post-title a {
+    color:#000;
+  }
 #logo {float:left;}
 
 .header-container {
@@ -303,6 +311,9 @@ time {
   line-height: 1.5em;
   font-size:2.1em;
 }
+.excerpt-wrap {
+  margin-bottom:20px;
+}
 
 .tag_wrap {
   clear:left;
@@ -324,7 +335,6 @@ ul.tag-list {
   margin-right:10px;
   font-size:1.6em;
 }
-
 .tag-list-item a {
   color:white;
 }
@@ -366,9 +376,13 @@ ul.tag-list {
 .main img {
     width:100%;
     clear:both;
+    margin-bottom:20px;
 }
 .page-content img {
   margin:10px 0;
+}
+.excerpt-wrap img {
+  margin:0;
 }
 iframe.twitter-tweet {
   width:100% !important;

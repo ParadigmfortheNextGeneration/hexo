@@ -53,7 +53,7 @@
     .row
       div(class=content_class)
         .page-content !{page.content}    
-        - if (index)
+          - if (index)
             - page.posts.each(function(post) {
                 include _excerpt
             - })
