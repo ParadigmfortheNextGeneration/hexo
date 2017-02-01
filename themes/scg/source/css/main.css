@@ -231,6 +231,25 @@ input[type="button"].button-primary:focus {
   border-color: #ff4400;
   text-decoration: none;
 }
+.button .fa {
+  color: #ff4400;
+}
+.button-primary .fa {
+  color: #fff;
+}
+
+.button:hover .fa,
+button:hover .fa,
+input[type="submit"]:hover .fa,
+input[type="reset"]:hover .fa,
+input[type="button"]:hover .fa,
+.button:focus .fa,
+button:focus .fa,
+input[type="submit"]:focus .fa,
+input[type="reset"]:focus .fa,
+input[type="button"]:focus .fa {
+  color: #ff9c00;
+}
 
 .main {
   padding-top:80px;

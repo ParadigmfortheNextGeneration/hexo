@@ -1,4 +1,4 @@
-title: Test a Post - With Line Break
+title: Test Page
 feed_hide: false
 tags:
   - logic
