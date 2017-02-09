@@ -15,7 +15,7 @@ links_title:
 quotes:
 
 thumbnail:
-# video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
+video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 parallax_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 slideshow:
 

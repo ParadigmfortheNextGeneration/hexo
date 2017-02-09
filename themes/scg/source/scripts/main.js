@@ -29,7 +29,7 @@ $(document).ready(function() {
     
     $(".tweet").each(function() {
       $(this).after(twitter_code);
-      $(this).removeClass('tweet');
+      $(this).removeClass('tweet').addClass('tweet_processed');
       //console.log('here');
       //console.log(twttr);
       var tweet_id = $(this).attr('data-tweet-id');

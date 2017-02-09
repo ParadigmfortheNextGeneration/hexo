@@ -31,7 +31,7 @@ body {
   
 }
 .main {
-  padding-top:120px;
+  padding-top:115px;
 }
 .full_width_wrap {
   background: #000;
@@ -134,6 +134,7 @@ h1 {
 }
 h1.page-title {
   margin-top:50px;
+  font-size:6.5em;
   text-align: center;
 }
 h2 {
@@ -478,6 +479,9 @@ ul.tag-list {
 iframe.twitter-tweet {
   width:100% !important;
 }
+.tweet_processed .tweet_url {
+  display:none;
+}
 .parallax {
   /* Set a specific height */
     height: 300px;
@@ -501,8 +505,13 @@ iframe.twitter-tweet {
 @media (max-width: 550px) {
   h1.page-title {
     font-size: 5.5em;
-  }
+  } 
 }
+@media (max-width: 650px) {
+  .page-content h2 {
+    font-size: 1.8em;
+  }
+}  
 @media (max-width: 400px) {
   h1.page-title {
     font-size: 4em;

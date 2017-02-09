@@ -28,7 +28,6 @@
   // - var categories = site.categories.findOne({name: 'syria'}).posts
   // - console.log(categories)
   
-  
   - if (!page.hide_title) {
   .full_width_wrap
     .container
@@ -40,15 +39,17 @@
     div(class="parallax" style="background-image:url("+page.parallax_image+")")
   - }
   
-  - if (page.video) {
-    .full_width_wrap
-      .container
-        .featured_video !{page.video}
-  - }
   - if (!page.hide_title) {
   .full_width_wrap
     .container
       .description !{page.description}
+  - }
+  
+
+  - if (page.video) {
+    .full_width_wrap
+      .container
+        .featured_video !{page.video}
   - }
   
   - if (page.date && (page.date_hide != true)) {
