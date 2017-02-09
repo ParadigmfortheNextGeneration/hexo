@@ -18,5 +18,6 @@ slideshow:
 ## Settings
 feed_hide: false
 show_tags: true
-updated:
+push_update:
+date_hide: true
 ---

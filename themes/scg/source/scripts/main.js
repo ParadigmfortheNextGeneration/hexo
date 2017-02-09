@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  var first_visit_cookie_name = $('#first_visit').attr('data-cookie-name');
+  if (first_visit_cookie_name) {
+    $('#first_visit').firstVisitPopup({
+	  cookieName : first_visit_cookie_name,
+	  showAgainSelector: '#show-message'
+	});
+  }
+  //$(".parallax-window").parallax({imageSrc: $(".parallax-window").attr("data-image-src")});
+   
+  
+  
+  
     var twitter_load = function() {
        var twitter_code  = '<script>window.twttr = (function(d, s, id) {'
         twitter_code += 'var js, fjs = d.getElementsByTagName(s)[0],'

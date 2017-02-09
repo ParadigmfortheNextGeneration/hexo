@@ -1,16 +1,29 @@
 - var title = page.title ? page.title + ' | ' + config.title : config.title
 - var og_title = page.title ? page.title : config.title
 - if (page.tags) {
-- var tagCount = page.tags.length
+  - var tagCount = page.tags.length
+  - if(tagCount != 0) {
+    - var tags = [];
+    - for (var i = 0; i < tagCount; i++) {
+       - if (page.tags.data) {
+         - if (page.tags.data[i]['name']) {
+         - var name = page.tags.data[i]['name']
+         - }
+       - }
+       
+       - if (page.tags[i]) {
+       - var name = page.tags[i]
+       - }
+       - if (name) {
+         - tags.push(name)
+       - }
+       
+    - }
+    - tags = tags.join(',')
+  - }
 - }
 
-- if(tagCount) {
-  - var tags = [];
-  - for (var i = 0; i < tagCount; i++) {
-     - tags.push(page.tags.data[i]['name'])
-  - }
-  - tags = tags.join(',')
-- }
+
 
 
 meta(charset='UTF-8')

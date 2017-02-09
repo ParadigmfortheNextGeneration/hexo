@@ -17,16 +17,34 @@ light blue: #0fa0ce
 
 
 html {
-  color: #182e53;
+  color: #000;
   font-size: 1em;
   line-height: 1.4;
+  
 }
 
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
   font-size:62.5%;
+  background: #000;
+  color:#fff;
+  
 }
-
+.main {
+  padding-top:120px;
+}
+.full_width_wrap {
+  background: #000;
+  color:#fff;
+  padding-top:20px;
+}
+.full_width_wrap.white {
+  background: #fff;
+  color:#000;
+}
+.container {
+  margin-top:20px;
+}
 ::-moz-selection {
     background: #ff9c00;
     text-shadow: none;
@@ -109,13 +127,27 @@ h1, h2, h3, h4, h5, h6 {
   line-height:.9em;
   text-transform: uppercase;
   word-spacing: -0.2em;
+  -moz-osx-font-smoothing: auto;
 }
 h1 {
-    -moz-osx-font-smoothing: auto;
-    font-size:6.5em;
+    font-size:4em;
+}
+h1.page-title {
+  margin-top:50px;
+  text-align: center;
 }
 h2 {
   font-size:2.8em;
+}
+.page-content h2 {
+  background: #000;
+  color:#fff;
+  padding:30px;
+}
+.page-content h2 a:link,
+.page-content h2 a:visited,
+.page-content h2 a:active{
+  color:#ff4400;
 }
 h3 {
   font-size: 1.8em;
@@ -123,26 +155,35 @@ h3 {
   h3.post-title a {
     color:#000;
   }
-#logo {float:left;}
+#logo {
+  position: absolute;
+  left:-55px;
+  margin-left:50%;
+}
+/*#logo img {
+  height: 70px;
+  margin-top:5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}*/
 
 .header-container {
     height: 80px;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    border-bottom:2px solid #4A90E2;
+    -webkit-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
+    box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
+  }
+.header-container,
+.footer-container {
+  background: #000;
 }
-ul.menu {
-  margin: 0;
-  padding: 0;
-}
+/*border-bottom:2px solid #4A90E2;*/
 
-nav ul li {
-  float:right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 .icon a {
   height:80px;
   width:70px;
@@ -156,9 +197,6 @@ nav ul li {
   color:#ff4400;
 }
 
-ul.menu a {
-  float:left;
-}
 .icon a .fa {
   font-size:30px;
   margin:25px 0 0 21px;
@@ -168,6 +206,14 @@ ul.menu .button {
 }
 #menu_button {
   float:left;
+}
+
+.call-to-action {
+  margin:20px 0px 0 20px;
+}
+.call-to-action.donate {
+  float:right;
+   margin:20px 20px 0 20px;
 }
 
 .sidr_close {
@@ -212,7 +258,12 @@ input[type="button"]:focus {
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
-input[type="button"].button-primary {
+input[type="button"].button-primary,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #4A90E2;
   border-color: #4A90E2; }
@@ -220,12 +271,7 @@ input[type="button"].button-primary {
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
+input[type="button"].button-primary:hover {
   color: #ff4400;
   background-color: #fff;
   border-color: #ff4400;
@@ -242,34 +288,21 @@ input[type="button"].button-primary:focus {
 button:hover .fa,
 input[type="submit"]:hover .fa,
 input[type="reset"]:hover .fa,
-input[type="button"]:hover .fa,
-.button:focus .fa,
-button:focus .fa,
-input[type="submit"]:focus .fa,
-input[type="reset"]:focus .fa,
-input[type="button"]:focus .fa {
+input[type="button"]:hover .fa{
   color: #ff9c00;
 }
 
-.main {
-  padding-top:80px;
-}
-.container {
-  margin-top:20px;
-}
+
 
 .footer-container {
     border-top: 5px solid #4A90E2;
 }
 
-.header-container,
-.footer-container {
-  background: #182E53;
-}
+
 
 .links-wrap {
-  border-top: 6px solid #182e53;
-  border-bottom: 6px solid #182e53;
+  border-top: 6px solid #000;
+  border-bottom: 6px solid #000;
   padding:20px 0 0 0;
   margin-bottom:20px;
 }
@@ -297,7 +330,7 @@ ul.aside-list li::before {
 }
 ul.aside-list li a:link,
 ul.aside-list li a:visited {
-  color:#182e53;
+  color:#000;
   font-family:'Heavy';
   font-size:3.2em;
   font-weight: 700;
@@ -314,6 +347,7 @@ time {
   font-size: 1.6em;
   font-family:'Heavy';
   display:inline;
+  color:#4a90e2;
 }
 .description {
   font-family:'Heavy';
@@ -370,6 +404,44 @@ ul.tag-list {
 .pagination span {
   background: #666;
 }
+#first_visit {
+  display:none;
+  z-index: 9999;
+  background: #fff;
+  position:relative;
+  margin:15% auto;
+  height: 100%;
+  width:90%;
+  overflow: auto;
+}
+.first_visit_wrap {
+  position: fixed;
+  width:100%;
+  font-size:2.1em;
+}
+.first_visit_inner {
+  padding:0px 20px 20px 20px;
+  clear:both;
+}
+.first_visit_close {
+  cursor: pointer;
+  color:#182e53;
+}
+.first_visit_close .fa {
+  float:right;
+  clear: both;
+  margin:10px;
+}
+#first_visit_background {
+  z-index:9998;
+  position: fixed;
+  width:100%;
+  top:0;
+  left:0;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
 
 /* ==========================================================================
    Media Styling
@@ -406,6 +478,17 @@ ul.tag-list {
 iframe.twitter-tweet {
   width:100% !important;
 }
+.parallax {
+  /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
