@@ -102,7 +102,7 @@ $(document).ready(function() {
         name: 'sidr_menu',
         side: 'left'
       });
-    $('#social_button').sidr({
+    $('.follow').sidr({
         name: 'sidr_social',
         onOpen: social_open,
         side: 'right'

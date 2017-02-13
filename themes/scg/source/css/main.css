@@ -148,7 +148,7 @@ h2 {
 .page-content h2 a:link,
 .page-content h2 a:visited,
 .page-content h2 a:active{
-  color:#ff4400;
+  color:#fff;
 }
 h3 {
   font-size: 1.8em;
@@ -222,7 +222,7 @@ ul.menu .button {
   font-size:20px;
   float:left;
   margin:20px 0 0 20px;
-  color:#182e53;
+  color:#ff4400;
 }
 .sidr_wrap {
   clear:both;
@@ -468,8 +468,11 @@ ul.tag-list {
 .main img {
     width:100%;
     clear:both;
-    margin-bottom:20px;
+    
 }
+.main .content img {
+  margin-bottom:20px;
+}  
 .page-content img {
   margin:10px 0;
 }
@@ -496,22 +499,79 @@ iframe.twitter-tweet {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+  
+
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+@media screen and (max-width: 970px) {
+  .get-involved {
+    display:none;
+  }
+}
+
 @media (max-width: 750px) {
   ul.aside-list li a:link, ul.aside-list li a:visited {
     font-size: 2.2em;
+  }
+  .page-content h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .follow {
+    display:none;
+  }
+  .page-content h1 {
+    font-size:3em;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  ul.menu .button {
+    margin: 20px 10px 0 0;
+    font-size:9px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-spacing: -0.1em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .donate {
+    display:none;
   }
 }
 
 @media (max-width: 550px) {
   h1.page-title {
     font-size: 5.5em;
-  } 
-}
-@media (max-width: 650px) {
-  .page-content h2 {
-    font-size: 1.8em;
   }
-}  
+  .page-content h1 {
+    font-size:2em;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  #social_button {
+    display:none;
+  }
+}
+
 @media (max-width: 400px) {
   h1.page-title {
     font-size: 4em;
@@ -520,23 +580,6 @@ iframe.twitter-tweet {
     line-height: 1.3em;
   }
 }
-
- 
- @media screen and (max-width: 566px) {
-  ul.menu .button {
-    margin: 20px 10px 0 0;
-    font-size:9px;
-  }
-  
- }
-
- @media screen and (max-width: 524px) {
-  #social_button {
-    display:none;
-  }
- }
-
-
 
 /*We may enable this later, but for now it's not worth it.*/
 /*.teaser-wrap {

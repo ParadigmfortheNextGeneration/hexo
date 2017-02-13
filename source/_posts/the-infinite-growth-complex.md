@@ -16,7 +16,7 @@ quotes:
 
 thumbnail:
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
-parallax_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
+# featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 slideshow:
 
 push_update: false
@@ -38,7 +38,6 @@ The democratic process is rigged.
 The so called leaders corrupt and cartoonish.
 Money buys access.
 Pay to play.
-
 
 We are hooked on a socio-economic model that rewards destructive behavior, 
 elevates clinical psychopaths to positions of power, 

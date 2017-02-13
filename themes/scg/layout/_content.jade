@@ -34,9 +34,15 @@
       h1.page-title !{title}
   - }
   
-  - if(page.parallax_image) {
+  - if(page.featured_image) {
   .full_width_wrap
-    div(class="parallax" style="background-image:url("+page.parallax_image+")")
+    img(class="lazy", data-src=page.featured_image, alt=page.title)
+  - }
+  
+  - if (page.video) {
+    .full_width_wrap
+      .container
+        .featured_video !{page.video}
   - }
   
   - if (!page.hide_title) {
@@ -45,12 +51,6 @@
       .description !{page.description}
   - }
   
-
-  - if (page.video) {
-    .full_width_wrap
-      .container
-        .featured_video !{page.video}
-  - }
   
   - if (page.date && (page.date_hide != true)) {
     .full_width_wrap
