@@ -3,23 +3,25 @@ html(lang='en-us')
   head
     include _head
   body(itemscope, itemtype='https://schema.org/WebPage')
-    include _browserupgrade.html
-    include _header
-    - if (page.first_visit && page.cookie_name) {
-      .first_visit_wrap
-        div(id='first_visit', data-cookie-name=page.cookie_name)
-          .first_visit_inner  !{page.first_visit} 
-    -}
-    .main
-      include _content
-      
-    include _sidr_menu.html
-    include _sidr_social.html
-    include _scripts
-    script(src='/scripts/vendor/jquery-1.11.2.min.js')
-    script(src='/scripts/vendor/jquery.viewport.mini.js')
-    script(src='/scripts/vendor/firstvisit/jquery.firstVisitPopupCustom.js')
-    script(src='/scripts/vendor/jquery.sidr.min.js')
-    script(src='/scripts/main.js')
+    div(id="html_wrapper")
+      include _browserupgrade.html
+      include _header
+      - if (page.first_visit && page.cookie_name) {
+        .first_visit_wrap
+          div(id='first_visit', data-cookie-name=page.cookie_name)
+            .first_visit_inner  !{page.first_visit} 
+      -}
+      .main
+        include _content
+        
+      include _menu.html
+      include _sidr_social.html
+      include _scripts
+      script(src='/scripts/vendor/jquery-1.11.2.min.js')
+      script(src='/scripts/vendor/jquery.viewport.mini.js')
+      script(src='/scripts/vendor/firstvisit/jquery.firstVisitPopupCustom.js')
+      script(src='/scripts/vendor/jquery.sidr.min.js')
+      script(src='/scripts/vendor/mmenu/dist/js/jquery.mmenu.all.min.js')
+      script(src='/scripts/main.js')
     
     

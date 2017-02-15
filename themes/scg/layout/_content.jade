@@ -35,7 +35,6 @@
   - }
   
   - if(page.featured_image) {
-  .full_width_wrap
     img(class="lazy", data-src=page.featured_image, alt=page.title)
   - }
   
@@ -52,7 +51,7 @@
   - }
   
   
-  - if (page.date && (page.date_hide != true)) {
+  - if (page.date && (page.hide_date != true)) {
     .full_width_wrap
       .container
         time(datetime=date_xml(page.date), itemprop="datePublished") <span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>

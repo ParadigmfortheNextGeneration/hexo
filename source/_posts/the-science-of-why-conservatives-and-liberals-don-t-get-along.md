@@ -3,7 +3,7 @@ uuid: f0fd5240-ee1b-11e6-b23c-e56727554549
 title: The Science of Why Conservatives and Liberals Hate Each Other
 tags:
   - logic
-feed_hide: false
+hide_from_feed: false
 show_tags: true
 first_visit: This is a test visit <a class="button-primary">Test this button!</a>
 cookie_name:

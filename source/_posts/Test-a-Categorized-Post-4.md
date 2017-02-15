@@ -1,7 +1,7 @@
 ---
 uuid: 3188ef60-e834-11e6-b829-3ff0814fa63d
 title: Test a Categorized Post 4
-feed_hide: false
+hide_from_feed: false
 category: tests
 tags:
   - logic

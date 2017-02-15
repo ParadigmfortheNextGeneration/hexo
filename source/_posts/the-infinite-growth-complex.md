@@ -3,7 +3,7 @@ uuid: 3188ef60-e834-11e6-b829-3ff0814fa63c
 title: The Infinite Growth Complex
 tags:
   - logic
-feed_hide: false
+hide_from_feed: false
 show_tags: true
 date: 2017-02-01 00:09:14
 description: All debt based monetary systems are on a trajectory that leads to a systemic breaking point. Baked in the cake. By design.

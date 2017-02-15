@@ -21,9 +21,9 @@ first_visit: 'This is a test visit <a class="button-primary">Test this button!</
 cookie_name:
 
 ## Settings
-feed_hide: false
+hide_from_feed: false
 show_tags: true
-date_hide: false
+hide_date: false
 
 
 custom_js_files:

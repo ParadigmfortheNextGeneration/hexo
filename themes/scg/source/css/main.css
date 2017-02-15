@@ -31,19 +31,19 @@ body {
   
 }
 .main {
-  padding-top:115px;
+  padding-top:80px;
 }
 .full_width_wrap {
   background: #000;
   color:#fff;
-  padding-top:20px;
+  padding: 20px 0;
 }
 .full_width_wrap.white {
   background: #fff;
   color:#000;
 }
 .container {
-  margin-top:20px;
+  margin-top:0px;
 }
 ::-moz-selection {
     background: #ff9c00;
@@ -117,10 +117,10 @@ a:hover {
   text-decoration: underline;
   color:#ff4400;
 }
-nav ul li a,
+/*nav ul li a,
 nav ul li a:visited{
   color: #4A90E2;
-}
+}*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Heavy', sans-serif !important;
   margin-bottom:20px;
@@ -217,6 +217,30 @@ ul.menu .button {
    margin:20px 20px 0 20px;
 }
 
+.mm-menu.mm-theme-black
+.mm-btn::after,
+.mm-menu.mm-theme-black
+.mm-btn::before,
+.mm-menu.mm-theme-black .mm-listview > li .mm-next::after {
+    border-color: #4a90e2;
+}
+.mm-menu.mm-theme-black {
+  color:#fff;
+}
+.mm-listview {
+  font-size:17px;
+}
+.mm-menu.mm-theme-black em.mm-counter {
+  color:#4a90e2;
+}
+.mm-listview .fa{
+  font-size:15px;
+  margin-right:5px;
+  color:#4a90e2;
+}
+.mm-listview a:hover .fa {
+  color:#ff4400;
+}
 .sidr_close {
   cursor: pointer;
   font-size:20px;

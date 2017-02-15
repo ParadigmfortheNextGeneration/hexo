@@ -98,9 +98,35 @@ $(document).ready(function() {
       //alert('here');  
     }
     
-    $('#menu_button').sidr({
-        name: 'sidr_menu',
-        side: 'left'
+    $('#main_menu').mmenu({
+      extensions	: [ 'theme-black', 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
+					keyboardNavigation 		: true,
+					screenReader 			: true,
+					counters				: true,
+      navbar 	    : {
+						title	: 'StormCloudsGathering'
+					},              
+      navbars	    : [
+						{
+							position	: 'top',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'top',
+							content		: [
+								'prev',
+								'title',
+								'close'
+							]
+						}
+					]
+      }, {
+         // configuration
+         "searchfield": {
+            "clear": true
+         },
+         offCanvas: {
+            pageSelector: "#html_wrapper"
+         }
       });
     $('.follow').sidr({
         name: 'sidr_social',

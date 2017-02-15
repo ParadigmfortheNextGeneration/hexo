@@ -1,5 +1,5 @@
 title: Test Page
-feed_hide: false
+hide_from_feed: false
 tags:
   - logic
   - war
