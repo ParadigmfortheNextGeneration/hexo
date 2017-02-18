@@ -3,6 +3,10 @@ uuid: 3188ef60-e834-11e6-b829-3ff0814fa63c
 title: The Infinite Growth Complex
 tags:
   - logic
+  - geopolitics
+  - economics
+  - money
+  - psychology
 hide_from_feed: false
 show_tags: true
 date: 2017-02-01 00:09:14
@@ -16,7 +20,7 @@ quotes:
 
 thumbnail:
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
-# featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
+featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 slideshow:
 
 push_update: false
@@ -24,7 +28,9 @@ push_update: false
 first_visit: '<p>This is not meant to be passively consumed.</p> <a class="button button-primary first_visit_close">I understand</a>'
 cookie_name: InfiniteGrowthComplex-noPassive-Consumption
 
-injection_html: []
+# html_injection_items:
+# - mailing_list.html
+# html_injection_disable:
 custom_js_files:
 custom_json_files:
 

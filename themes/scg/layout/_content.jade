@@ -1,11 +1,12 @@
 - if (page.tags) {
 -   var tags = page.tags.length
-- console.log(page.tags);
 -  }
 
- - var content_class = "twelve columns"
+- var content = htmlInjection(page.content, page.html_injection_items, page.html_injection_disable)
+
+ - var content_class = "col l12"
  - if (page.links) {
- -   content_class = "seven columns"
+ -   content_class = "col l7 m8"
  - }
  
 
@@ -23,25 +24,25 @@
   // - console.log(categories)
   
   - if (!page.hide_title) {
-  .full_width_wrap
-    .container
-      h1.page-title !{title}
+    .full_width_wrap
+      .container
+        h1.page-title !{title}
   - }
   
   - if(page.featured_image) {
-    img(class="lazy", data-src=page.featured_image, alt=page.title)
+    .parallax-container
+      .parallax
+        img(class="lazy", data-src=page.featured_image, alt=page.title)
   - }
   
   - if (page.video) {
-    .full_width_wrap
-      .container
-        .featured_video !{page.video}
+    .featured_video !{page.video}
   - }
   
   - if (!page.hide_title) {
-  .full_width_wrap
-    .container
-      .description !{page.description}
+    .full_width_wrap
+      .container
+        .description !{page.description}
   - }
   
   
@@ -55,14 +56,14 @@
       .content
         .row
           div(class=content_class)
-            .page-content !{page.content}    
+            .page-content !{content}
               - if (index)
                 - page.posts.each(function(post) {
                     include _excerpt
                 - })
                 
           - if (page.links) {
-          .five.columns
+          .col.l5.m4
               include _aside
           - }
           

@@ -94,6 +94,10 @@ theme: scg
 exclude_generator:
 - home
 
+html_injection_items:
+  - mailing_list.html
+  - promotion.html
+  - follow.html
 
 thumbnails:
   profiles:

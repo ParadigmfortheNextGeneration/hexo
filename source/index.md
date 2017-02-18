@@ -6,7 +6,7 @@ links:
  - Paradigm for the Next Generation||/paradigm-for-the-next-generation
  - The Infinite Growth Complex.||/paradigm-for-the-next-generation/the-infinite-growth-complex
  - Hegelian Geopolitics||/hegelian-geopolitics
-links_title: none
+links_title:
 description: The world seems to have gone crazy hasn't it?
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 

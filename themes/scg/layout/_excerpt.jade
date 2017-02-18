@@ -1,12 +1,12 @@
 - // console.log();
 - var rightclass = 'twelve columns'
 - if (post.smallThumb) {
--   rightclass = 'nine columns'
+-   rightclass = 'col l8 m9'
 - }
 
 .excerpt-wrap.row
   - if (post.smallThumb) {
-  div(class="three columns")
+  div(class="col l4 m3")
     img(class="lazy", data-src=post.smallThumb)
   - }
   div(class=rightclass)

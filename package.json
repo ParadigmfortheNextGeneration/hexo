@@ -21,6 +21,7 @@
     "hexo-server": "^0.2.0",
     "hexo-custom-thumbnails": "0.0.6",
     "hexo-uuid": "^1.0.1",
+    "hexo-html-injection": "",
     "twitter-widgets": "^1.0.0"
   }
 }
