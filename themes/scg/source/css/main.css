@@ -120,8 +120,6 @@ textarea {
 }
 
 
-
-
 .page-content a:link,
 .page-content a:active,
 .page-content a:visited {
@@ -281,29 +279,45 @@ h3 {
   font-size:13px;
 }
 
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
-  background: #fff;
-  border: 1px solid #1E88E5;
-  color:#1E88E5;
-}
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #ff3d00;
-  border-color: #ff3d00;
-  outline: 0;
-  text-decoration: none;
-}
-
 .btn.white .fa {
   color: #ff3d00;
+}
+
+input:not([type]),
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="time"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+textarea.materialize-textarea {
+  border: 1px solid #000;
+  padding:0 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+input:focus:not([type]):not([readonly]),
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border: 1px solid #1e88e5;
+  box-shadow: none;
 }
 
 .links-wrap {
@@ -367,6 +381,20 @@ time {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   line-height: 1.5em;
   font-size:2.1em;
+}
+.page-content .btn {
+  font-family: sans-serif;
+  font-size:15px;
+  font-weight: bold;
+}
+.smart_feedburner_text {
+  box-sizing: border-box !important;
+}
+.smart_feedburner_submit {
+  width:100%;
+}
+.injection_html {
+  visibility: hidden;
 }
 .excerpt-wrap {
   margin-bottom:20px;

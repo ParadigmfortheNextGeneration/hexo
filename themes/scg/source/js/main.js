@@ -1,15 +1,18 @@
-$(document).ready(function() {
+var initializeEvents = function() {
   $('.parallax').parallax();
   
   var first_visit_cookie_name = $('#first_visit').attr('data-cookie-name');
-  if (first_visit_cookie_name) {
-    $('#first_visit').firstVisitPopup({
+  if (first_visit_cookie_name && (!$('#first_visit').hasClass('first_visit_processed'))) {
+    $('#first_visit').addClass('first_visit_processed').firstVisitPopup({
 	  cookieName : first_visit_cookie_name,
 	  showAgainSelector: '#show-message'
 	});
   }
   
-  
+  $('.form_default').each(function(){
+    var default_value = $(this).attr('data-form-default');
+    $(this).addClass('default_processed').DefaultValue(default_value);
+  });
   
     var twitter_load = function(item) {
        var twitter_code  = '<script>window.twttr = (function(d, s, id) {'
@@ -45,7 +48,7 @@ $(document).ready(function() {
     
     var injection_html_call = function(item) {
       var file_name = $(item).attr('data-injection-html');
-      $(item).removeClass('injection_html_item').addClass('injection_html_processed').load('/injection_html/'+file_name);
+      $(item).removeClass('injection_html_item').addClass('injection_html_processed').load('/injection_html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
     }
     
     var lazy_image_call = function(item) {
@@ -156,4 +159,5 @@ $(document).ready(function() {
       $.sidr('close', 'sidr_menu');
       $.sidr('close', 'sidr_social');
       });
-});
+}
+$(document).ready(initializeEvents());

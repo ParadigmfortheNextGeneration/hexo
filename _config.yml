@@ -96,7 +96,6 @@ exclude_generator:
 
 html_injection_items:
   - mailing_list.html
-  - promotion.html
   - follow.html
 
 thumbnails:
