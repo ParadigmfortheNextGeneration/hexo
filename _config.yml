@@ -136,14 +136,14 @@ thumbnails:
         
 jsonContent:
   meta: true
-  keywords: false # language name option
-  dateFormat: undefined # format string
+  keywords: false # english and must have excerpt
+  dateFormat: 'MMMM DD, YYYY'
   pages:
     title: true
     slug: true
     date: true
     updated: true
-    comments: true
+    comments: false
     path: true
     link: true
     permalink: true

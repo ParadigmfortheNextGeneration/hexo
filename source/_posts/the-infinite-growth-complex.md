@@ -10,7 +10,7 @@ tags:
 hide_from_feed: false
 show_tags: true
 date: 2017-02-01 00:09:14
-description: All debt based monetary systems are on a trajectory that leads to a systemic breaking point. Baked in the cake. By design.
+description: All debt based monetary systems are on a trajectory that leads to a systemic breaking point. Baked in the cake. By design. Baked in the cake. By design.
 permalink: paradigm-for-the-next-generation/the-infinite-growth-complex
 links:
  - Paradigm for the Next Generation||/paradigm-for-the-next-generation
@@ -23,7 +23,7 @@ video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 slideshow:
 
-push_update: false
+push_update: true
 
 first_visit: '<p>This is not meant to be passively consumed.</p> <a class="button button-primary first_visit_close">I understand</a>'
 cookie_name: InfiniteGrowthComplex-noPassive-Consumption
