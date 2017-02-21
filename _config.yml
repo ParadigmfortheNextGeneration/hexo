@@ -97,6 +97,31 @@ exclude_generator:
 html_injection_items:
   - mailing_list.html
   - follow.html
+  
+html_minifier:
+  enable: false
+  exclude:
+
+css_minifier:
+  enable: false
+  exclude: 
+    - '*.min.css'
+
+js_minifier:
+  enable: false
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
 
 thumbnails:
   profiles:
@@ -108,6 +133,42 @@ thumbnails:
       resize:
         - 455
         - 455
+        
+jsonContent:
+  meta: true
+  keywords: false # language name option
+  dateFormat: undefined # format string
+  pages:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+    categories: true
+    tags: true
+    
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:

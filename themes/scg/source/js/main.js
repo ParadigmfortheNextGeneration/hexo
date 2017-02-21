@@ -145,6 +145,10 @@ var initializeEvents = function() {
          "searchfield": {
             "clear": true
          },
+         keyboardNavigation: {
+            enabled: true,
+            enhance: true
+          },
          offCanvas: {
             pageSelector: "#html_wrapper"
          }
