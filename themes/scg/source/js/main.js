@@ -64,7 +64,7 @@ var initializeEvents = function() {
        injection_html_call(this);
     });
     
-    $(".tweet:in-viewport").each(function() {
+    $(".tweet-link:in-viewport").each(function() {
       twitter_load(this);
     });
     
@@ -77,7 +77,7 @@ var initializeEvents = function() {
             injection_html_call(this);
         });
         
-        $(".tweet:in-viewport").each(function() {
+        $(".tweet-link:in-viewport").each(function() {
           twitter_load(this);
         });
     });

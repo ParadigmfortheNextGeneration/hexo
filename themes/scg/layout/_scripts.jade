@@ -23,4 +23,21 @@ if theme.google_analytics
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','#{theme.google_analytics}');ga('send','pageview');
-    
+
+script.
+  var fb_app_id = '#{theme.fb_app_id}';
+  var twitter_handle = '#{theme.twitter}';
+  shareSelectedText('.page-content', {
+    tooltipClass: 'selected-text-tool-tip',    // cool, if you want to customize the tooltip 
+    sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended)  
+    buttons: [           // services that you want to enable you can add :  
+        'twitter',
+        'reddit',// - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook 
+        'facebook'
+    ],
+    anchorsClass: 'selected-text-share-link-item',    // class given to each tooltip's links 
+    twitterUsername: twitter_handle, // for twitter widget, will add 'via @twitterUsername' at the end of the tweet. 
+    facebookAppID: fb_app_id,// Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/> 
+    facebookDisplayMode: 'popup', //can be 'popup' || 'page' 
+    tooltipTimeout: 150  //Timeout before that the tooltip appear in ms 
+  })

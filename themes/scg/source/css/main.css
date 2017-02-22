@@ -56,12 +56,14 @@ body {
   margin-top:0px;
 }
 ::-moz-selection {
-    background: #ff9c00;
+    background: #ff3d00;
+    color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #ff9c00;
+    background: #ff3d00;
+    color: #fff;
     text-shadow: none;
 }
 
@@ -165,7 +167,7 @@ h1.page-title {
   color:#fff;
 }*/
 h3 {
-  font-size: 1.8em;
+  font-size: 1em;
 }
 .content h3.post-title a {
     color:#000;
@@ -320,11 +322,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: none;
 }
 
-.links-wrap {
+.links-wrap,
+.injection_html {
   border-top: 6px solid #000;
   border-bottom: 6px solid #000;
-  padding:20px 0 0 0;
+  padding:20px 0;
   margin-bottom:20px;
+}
+.links-wrap {
+  padding-bottom: 0;
 }
 
 ul.aside-list {
@@ -381,6 +387,14 @@ time {
   font-family: Georgia,Cambria,"Times New Roman",Times,serif;
   line-height: 1.5em;
   font-size:2.1em;
+}
+.page-content p:first-child:first-letter {
+  float: left;
+  font-size: 73px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 .page-content .btn {
   font-family: sans-serif;
