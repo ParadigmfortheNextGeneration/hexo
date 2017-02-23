@@ -6,12 +6,10 @@
 (function ($) {
 
 	'use strict';
-
 	$.fn.firstVisitPopup = function (settings) {
 
-		var $body = $('body');
 		var $dialog = $(this);
-		var $blackout;
+
 		var setCookie = function (name, value) {
 			var date = new Date(),
 				expires = 'expires=';
@@ -35,18 +33,12 @@
 			return false;
 		}
 		var showMessage = function () {
-			$blackout.show();
-			$dialog.show();
+			$dialog.modal('open');
 		}
 		var hideMessage = function () {
-			$blackout.hide();
-			$dialog.hide();
+			$dialog.modal('close');
 			setCookie('fvpp' + settings.cookieName, 'true');
 		}
-
-		$body.append('<div id="first_visit_background"></div>');
-		$dialog.prepend('<a class="first_visit_close"><span class="fa fa-window-close"></span></a>');
-		$blackout = $('#first_visit_background');
 
 		if (getCookie('fvpp' + settings.cookieName)) {
 			hideMessage();
@@ -55,8 +47,6 @@
 		}
 
 		$(settings.showAgainSelector).on('click', showMessage);
-		$body.on('click', '#first_visit_background, .first_visit_close', hideMessage);
-
 	};
 
 })(jQuery);

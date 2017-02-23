@@ -25,8 +25,8 @@ slideshow:
 
 push_update: true
 
-first_visit: '<p>This is not meant to be passively consumed.</p> <a class="button button-primary first_visit_close">I understand</a>'
-cookie_name: InfiniteGrowthComplex-noPassive-Consumption
+first_visit: '<p>This is not meant to be passively consumed.</p> <a class="btn blue darken-1 waves-effect waves-blue modal-close">I understand</a>'
+# cookie_name: InfiniteGrowthComplex-noPassive-Consumption
 
 # html_injection_items:
 # - mailing_list.html
@@ -47,7 +47,7 @@ Pay to play.
 
 We are hooked on a socio-economic model that rewards destructive behavior, 
 elevates clinical psychopaths to positions of power, 
-and leaves the vast majority of the worlds population hanging by a thread.
+and [leaves the vast majority of the worlds population hanging by a thread](http://www.pewresearch.org/fact-tank/2015/09/23/seven-in-ten-people-globally-live-on-10-or-less-per-day/).
 
 Most don't even want to look at the problem, much less work towards a solution. 
 The scale is too overwhelming, the implications too horrific.

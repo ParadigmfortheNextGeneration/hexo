@@ -1,9 +1,10 @@
 var initializeEvents = function() {
   $('.parallax').parallax();
-  
-  var first_visit_cookie_name = $('#first_visit').attr('data-cookie-name');
-  if (first_visit_cookie_name && (!$('#first_visit').hasClass('first_visit_processed'))) {
-    $('#first_visit').addClass('first_visit_processed').firstVisitPopup({
+  $('.modal').modal();
+  //$('#first_visit_modal').modal('open');
+  var first_visit_cookie_name = $('#first_visit_modal').attr('data-cookie-name');
+  if (first_visit_cookie_name && (!$('#first_visit_modal').hasClass('first_visit_processed'))) {
+    $('#first_visit_modal').addClass('first_visit_processed').firstVisitPopup({
 	  cookieName : first_visit_cookie_name,
 	  showAgainSelector: '#show-message'
 	});
