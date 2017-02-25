@@ -49,7 +49,7 @@ var initializeEvents = function() {
     
     var injection_html_call = function(item) {
       var file_name = $(item).attr('data-injection-html');
-      $(item).removeClass('injection_html_item').addClass('injection_html_processed').load('/injection_html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
+      $(item).removeClass('injection_html_item').addClass('injection_html_processed').load('/html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
     }
     
     var lazy_image_call = function(item) {

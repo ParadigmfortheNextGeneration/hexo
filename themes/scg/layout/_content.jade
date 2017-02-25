@@ -29,9 +29,21 @@
         h1.page-title !{title}
   - }
   
-  - if(page.featured_image) {
-    .parallax-container
-      .parallax
+  - if(page.featured_image || page.featured_html) {
+    - var featured_outer_class = "featured-outer-container"
+    - var image_inner_class = "image-inner-container"
+    
+    - if (page.enable_parallax) {
+    - var featured_outer_class = "parallax-container featured-outer-container"
+    - var image_inner_class = "parallax image-inner-container"
+    - }
+    
+    div(class=featured_outer_class)
+      - if (page.featured_html) {
+       .featured_html.container
+         div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
+      - } 
+      div(class=image_inner_class)
         img(class="lazy", data-src=page.featured_image, alt=page.title)
   - }
   
@@ -51,7 +63,7 @@
       .container
         .row
           time(class="col l6" datetime=date_xml(page.date), itemprop="datePublished") <span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
-          - if (page.push_update == true) {
+          - if ((page.push_update || page.show_update) == true) {
           time(class="col l6 deep-orange-text text-accent-3" datetime=date_xml(page.updated), itemprop="dateModified") <span class="fa fa-refresh"></span> <span>Updated:</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
           - } 
   - }
@@ -79,4 +91,8 @@
         - if (page.archive == true) {
         - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
           .pagination !{pagination_nav}
-        - }    
+        - }
+        
+  .full_width_wrap.black
+    include _footer
+        

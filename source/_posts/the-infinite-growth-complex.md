@@ -21,9 +21,13 @@ quotes:
 thumbnail:
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
+enable_parallax: true
+featured_html: infinite_growth_complex_paradigm_next_generation_header.html
+
 slideshow:
 
-push_update: true
+push_update: false
+show_update: true
 
 first_visit: '<p>This is not meant to be passively consumed.</p> <a class="btn blue darken-1 waves-effect waves-blue modal-close">I understand</a>'
 # cookie_name: InfiniteGrowthComplex-noPassive-Consumption
@@ -31,6 +35,7 @@ first_visit: '<p>This is not meant to be passively consumed.</p> <a class="btn b
 # html_injection_items:
 # - mailing_list.html
 # html_injection_disable:
+
 custom_js_files:
 custom_json_files:
 

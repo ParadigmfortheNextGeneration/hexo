@@ -337,7 +337,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .links-wrap,
-.injection_html {
+.page-content .injection_html {
   border-top: 6px solid #000;
   border-bottom: 6px solid #000;
   padding:20px 0;
