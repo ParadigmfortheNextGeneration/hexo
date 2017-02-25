@@ -5,7 +5,7 @@ html(lang='en-us')
   body(itemscope, itemtype='https://schema.org/WebPage')
     - if (page.first_visit && page.cookie_name) {     
       div(class="modal" id='first_visit_modal', data-cookie-name=page.cookie_name)
-        div(class='modal-content')  !{page.first_visit} 
+        div(class='modal-content' data-modal-content=page.first_visit)
     -}
     div(id="html_wrapper")
       include _browserupgrade.html

@@ -32,8 +32,13 @@
 			}
 			return false;
 		}
-		var showMessage = function () {
+		var initializeModal = function() {
+			$dialog.modal();
 			$dialog.modal('open');
+		}
+		var showMessage = function () {
+			$dialog.children('.modal-content').load('/html/' + $dialog.children('.modal-content').attr('data-modal-content'), initializeModal);
+			
 		}
 		var hideMessage = function () {
 			$dialog.modal('close');

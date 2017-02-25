@@ -29,8 +29,8 @@ slideshow:
 push_update: false
 show_update: true
 
-first_visit: '<p>This is not meant to be passively consumed.</p> <a class="btn blue darken-1 waves-effect waves-blue modal-close">I understand</a>'
-# cookie_name: InfiniteGrowthComplex-noPassive-Consumption
+first_visit: first_visit_test.html
+cookie_name: InfiniteGrowthComplex-noPassive-Consumption
 
 # html_injection_items:
 # - mailing_list.html

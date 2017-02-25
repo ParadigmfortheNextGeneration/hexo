@@ -1,6 +1,6 @@
 var initializeEvents = function() {
   $('.parallax').parallax();
-  $('.modal').modal();
+  //$('.modal').modal();
   //$('#first_visit_modal').modal('open');
   var first_visit_cookie_name = $('#first_visit_modal').attr('data-cookie-name');
   if (first_visit_cookie_name && (!$('#first_visit_modal').hasClass('first_visit_processed'))) {
