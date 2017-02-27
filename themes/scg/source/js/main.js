@@ -6,7 +6,6 @@ var initializeEvents = function() {
   if (first_visit_cookie_name && (!$('#first_visit_modal').hasClass('first_visit_processed'))) {
     $('#first_visit_modal').addClass('first_visit_processed').firstVisitPopup({
 	  cookieName : first_visit_cookie_name,
-	  showAgainSelector: '#show-message'
 	});
   }
   
@@ -33,16 +32,23 @@ var initializeEvents = function() {
     
      
         $(item).after(twitter_code);
-        $(item).removeClass('tweet').addClass('tweet_processed');
+        $(item).removeClass('tweet-link').addClass('tweet_processed');
     
         var tweet_id = $(item).attr('data-tweet-id');
         var tweet_div = $(item)[0];
-        
+        var window_width =  $(window).innerWidth();
+        var twitter_width = 500;
+        if (window_width < 500) {
+          twitter_width = window_width - 30;
+        }
         twttr.ready(function(evt) {
           twttr.widgets.createTweet(tweet_id, tweet_div, 
             {
               conversation : 'none',    // or all
-              theme        : 'light'    // or dark
+              theme        : 'dark', // or dark
+              dnt          : 'true',
+              width        :  twitter_width,
+              align        : 'center'
             })
         });
     }

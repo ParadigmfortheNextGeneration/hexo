@@ -21,7 +21,7 @@ quotes:
 thumbnail:
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
-enable_parallax: true
+enable_parallax: false
 featured_html: infinite_growth_complex_paradigm_next_generation_header.html
 
 slideshow:

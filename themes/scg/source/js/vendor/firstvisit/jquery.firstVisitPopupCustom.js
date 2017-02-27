@@ -1,5 +1,5 @@
 /*
- * First Visit Popup jQuery Plugin version 1.2
+ * Adapted from First Visit Popup jQuery Plugin version 1.2
  * Chris Cook - chris@chris-cook.co.uk
  */
 
@@ -33,25 +33,19 @@
 			return false;
 		}
 		var initializeModal = function() {
-			$dialog.modal();
+			$dialog.modal({dismissible: false});
 			$dialog.modal('open');
-		}
-		var showMessage = function () {
-			$dialog.children('.modal-content').load('/html/' + $dialog.children('.modal-content').attr('data-modal-content'), initializeModal);
-			
-		}
-		var hideMessage = function () {
-			$dialog.modal('close');
 			setCookie('fvpp' + settings.cookieName, 'true');
 		}
+		var showMessage = function () {
+			$dialog.children('.modal-content').load('/html/' + $dialog.children('.modal-content').attr('data-modal-content'), initializeModal);	
+		}
 
-		if (getCookie('fvpp' + settings.cookieName)) {
-			hideMessage();
-		} else {
+
+		if (!getCookie('fvpp' + settings.cookieName)) {
 			showMessage();
 		}
 
-		$(settings.showAgainSelector).on('click', showMessage);
 	};
 
 })(jQuery);

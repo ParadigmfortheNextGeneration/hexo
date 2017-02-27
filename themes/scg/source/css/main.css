@@ -253,8 +253,11 @@ h3 {
 .mm-menu.mm-theme-black
 .mm-btn::before,
 .mm-menu.mm-theme-black .mm-listview > li .mm-next::after {
-    border-color: #1e88e5;
+    border-color: #ff3d00;
     box-sizing: initial !important;
+}
+.mm-close {
+  border-color:#ff3d00 !important;
 }
 .mm-menu.mm-theme-black {
   color:#fff;
@@ -273,6 +276,7 @@ h3 {
 .mm-listview a:hover .fa {
   color:#ff3d00;
 }
+#main_menu {}
 .sidr_close {
   cursor: pointer;
   font-size:20px;
@@ -286,6 +290,11 @@ h3 {
 .social-inner {
   padding:20px;
   clear: both;
+}
+.sidr h1, .sidr h2, .sidr h3, .sidr h4, .sidr h5, .sidr h6 {
+  background: none;
+  box-shadow: none;
+  font-size:22px;
 }
 .subscribe-item {
   margin-bottom: 10px;
@@ -418,7 +427,7 @@ time {
 .smart_feedburner_text {
   box-sizing: border-box !important;
 }
-.smart_feedburner_submit {
+.full-width-button {
   width:100%;
 }
 .injection_html {
@@ -501,7 +510,7 @@ ul.tag-list {
 .main img {
     width:100%;
     clear:both;
-    
+    min-height: auto; 
 }
 .main .content img {
   margin-bottom:20px;
@@ -512,8 +521,15 @@ ul.tag-list {
 .excerpt-wrap img {
   margin:0;
 }
-iframe.twitter-tweet {
-  width:100% !important;
+
+.tweet_processed {
+  width: auto;
+  margin:0 auto;
+  max-width: 100%;
+}
+.tweet_processed iframe {
+  box-sizing: border-box !important;
+  margin: 0 auto;
 }
 .tweet_processed .tweet_url {
   display:none;
