@@ -21,7 +21,7 @@ quotes:
 thumbnail:
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
-enable_parallax: false
+enable_parallax: true
 featured_html: infinite_growth_complex_paradigm_next_generation_header.html
 
 slideshow:
@@ -201,6 +201,8 @@ You can't just explain that their current standard of living depends upon it.
 To get them to send their brothers, sons and fathers to kill and be killed
 requires a cover story, a boogie man, and talking heads to wrap it in a flag.
 Problem, Reaction, Solution, Hegelian Geopolitics.
+
+<div class="injection_html" ddata-injection-html="hegelian_geopolitics.html"></div>
 
 [Mockingbird]
 

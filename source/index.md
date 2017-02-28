@@ -11,7 +11,7 @@ description: The world seems to have gone crazy hasn't it?
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 enable_parallax: true
 html_injection_disable: true
-center: true
+center: false
 no_container:
 ---
 
@@ -25,6 +25,10 @@ Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tem
 
 
 and...test again
+
+https://www.facebook.com/20531316728/posts/10154009990506729/
+
+and again
 
 https://www.youtube.com/watch?v=1MmfCX2H7N8
 

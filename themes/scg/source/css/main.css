@@ -346,7 +346,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .links-wrap,
-.page-content .injection_html {
+.page-content .injection_html_item {
   border-top: 6px solid #000;
   border-bottom: 6px solid #000;
   padding:20px 0;
@@ -532,6 +532,12 @@ ul.tag-list {
   margin: 0 auto;
 }
 .tweet_processed .tweet_url {
+  display:none;
+}
+.fb_url {
+  display:block;
+}
+.fb_item_processed .fb_url {
   display:none;
 }
 .parallax {

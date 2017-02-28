@@ -1,7 +1,35 @@
 var initializeEvents = function() {
-  $('.parallax').parallax();
-  //$('.modal').modal();
-  //$('#first_visit_modal').modal('open');
+  var youtubesubscribescript = '<script src="https://apis.google.com/js/platform.js"></script>'
+  
+  var twitterscript =                 '<script>window.twttr = (function(d, s, id) {';
+      twitterscript = twitterscript + 'var js, fjs = d.getElementsByTagName(s)[0],';
+      twitterscript = twitterscript + 't = window.twttr || {};';
+      twitterscript = twitterscript + 'if (d.getElementById(id)) return t;';
+      twitterscript = twitterscript + 'js = d.createElement(s);';
+      twitterscript = twitterscript + 'js.id = id;';
+      twitterscript = twitterscript + 'js.src = "https://platform.twitter.com/widgets.js";';
+      twitterscript = twitterscript + 'fjs.parentNode.insertBefore(js, fjs);';
+      twitterscript = twitterscript + 't._e = [];';
+      twitterscript = twitterscript + 't.ready = function(f) {';
+      twitterscript = twitterscript + 't._e.push(f);'
+      twitterscript = twitterscript + '};';
+      twitterscript = twitterscript + 'return t;';
+      twitterscript = twitterscript + '}(document, "script", "twitter-wjs"));</script>';
+  
+  // We need to get the app_id from the meta_tag if possible.
+  var facebookscript = '';
+      facebookscript = facebookscript + '<div id="fb-root"></div>';
+      facebookscript = facebookscript + '<script>(function(d, s, id) {';
+      facebookscript = facebookscript + 'var js, fjs = d.getElementsByTagName(s)[0];';
+      facebookscript = facebookscript + 'if (d.getElementById(id)) return;';
+      facebookscript = facebookscript + 'js = d.createElement(s); js.id = id;';
+      facebookscript = facebookscript + 'js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=514568561907093";';
+      facebookscript = facebookscript + 'fjs.parentNode.insertBefore(js, fjs);';
+      facebookscript = facebookscript + "}(document, 'script', 'facebook-jssdk'));</script>";    
+  
+  
+  
+
   var first_visit_cookie_name = $('#first_visit_modal').attr('data-cookie-name');
   if (first_visit_cookie_name && (!$('#first_visit_modal').hasClass('first_visit_processed'))) {
     $('#first_visit_modal').addClass('first_visit_processed').firstVisitPopup({
@@ -15,23 +43,8 @@ var initializeEvents = function() {
   });
   
     var twitter_load = function(item) {
-       var twitter_code  = '<script>window.twttr = (function(d, s, id) {'
-        twitter_code += 'var js, fjs = d.getElementsByTagName(s)[0],'
-        twitter_code += 't = window.twttr || {};'
-        twitter_code += 'if (d.getElementById(id)) return t;'
-        twitter_code += 'js = d.createElement(s);'
-        twitter_code += 'js.id = id;'
-        twitter_code += 'js.src = "https://platform.twitter.com/widgets.js";'
-        twitter_code += 'fjs.parentNode.insertBefore(js, fjs);'
-        twitter_code += 't._e = [];'
-        twitter_code += 't.ready = function(f) {'
-        twitter_code += 't._e.push(f);'
-        twitter_code += '};'
-        twitter_code += 'return t;'
-        twitter_code += '}(document, "script", "twitter-wjs"));</script></script>';
-    
      
-        $(item).after(twitter_code);
+        $(item).after(twitterscript);
         $(item).removeClass('tweet-link').addClass('tweet_processed');
     
         var tweet_id = $(item).attr('data-tweet-id');
@@ -39,7 +52,8 @@ var initializeEvents = function() {
         var window_width =  $(window).innerWidth();
         var twitter_width = 500;
         if (window_width < 500) {
-          twitter_width = window_width - 30;
+          twitter_width = window_width - 40;
+          alert(twitter_width);
         }
         twttr.ready(function(evt) {
           twttr.widgets.createTweet(tweet_id, tweet_div, 
@@ -55,19 +69,38 @@ var initializeEvents = function() {
     
     var injection_html_call = function(item) {
       var file_name = $(item).attr('data-injection-html');
-      $(item).removeClass('injection_html_item').addClass('injection_html_processed').load('/html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
+      $(item).removeClass('injection_html').addClass('injection_html_processed').load('/html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
+    }
+    
+    var parallax_load = function(item) {
+      // We get the height of the image and apply the height to ensure we don't have a big overflow.
+      // We should add a breakpoint to hide internal items that don't fit.
+      var parallax_image_height = $(item).children('img').innerHeight()  / 1.8;
+      $(item).parent().css('height', parallax_image_height);
+      $(item).parallax();
     }
     
     var lazy_image_call = function(item) {
       $(item).hide().attr("src", $(item).attr("data-src")).fadeIn(500).removeClass("lazy");
+      if ($(item).parent().hasClass('parallax')) {
+        parallax_load($(item).parent());
+      }
     } 
     
+    var fb_load = function(item) {
+      $(item).addClass('fb_item_processed').removeClass('fb_post_wrap');
+      $('body').prepend(facebookscript);
+    }
+    
+    $(".fb_post_wrap:in-viewport").each(function(){
+      fb_load(this);
+    });
     
     $(".lazy:in-viewport").each(function() {
         lazy_image_call(this);
     });
     
-    $('.injection_html_item:in-viewport').each(function(){
+    $('.injection_html:in-viewport').each(function(){
        injection_html_call(this);
     });
     
@@ -80,12 +113,16 @@ var initializeEvents = function() {
             lazy_image_call(this);
         });
         
-        $('.injection_html_item:in-viewport').each(function(){
+        $('.injection_html:in-viewport').each(function(){
             injection_html_call(this);
         });
         
         $(".tweet-link:in-viewport").each(function() {
           twitter_load(this);
+        });
+        
+        $(".fb_post_wrap:in-viewport").each(function(){
+          fb_load(this);
         });
     });
     
@@ -93,36 +130,11 @@ var initializeEvents = function() {
     
     // Load javascript for social media subscribe buttons asynchronously.
     var social_open = function() {
-      var youtubesubscribescript = '<script src="https://apis.google.com/js/platform.js"></script>'
       
-      var twitterscript =                 '<script>window.twttr = (function(d, s, id) {';
-          twitterscript = twitterscript + 'var js, fjs = d.getElementsByTagName(s)[0],';
-          twitterscript = twitterscript + 't = window.twttr || {};';
-          twitterscript = twitterscript + 'if (d.getElementById(id)) return t;';
-          twitterscript = twitterscript + 'js = d.createElement(s);';
-          twitterscript = twitterscript + 'js.id = id;';
-          twitterscript = twitterscript + 'js.src = "https://platform.twitter.com/widgets.js";';
-          twitterscript = twitterscript + 'fjs.parentNode.insertBefore(js, fjs);';
-          twitterscript = twitterscript + 't._e = [];';
-          twitterscript = twitterscript + 't.ready = function(f) {';
-          twitterscript = twitterscript + 't._e.push(f);'
-          twitterscript = twitterscript + '};';
-          twitterscript = twitterscript + 'return t;';
-          twitterscript = twitterscript + '}(document, "script", "twitter-wjs"));</script>';
       
       $(youtubesubscribescript).insertBefore( "#side-subscribe" );
       $(twitterscript).insertBefore( "#side-subscribe" );
-      
-      var facebookscript = '';
-          facebookscript = facebookscript + '<div id="fb-root"></div>';
-          facebookscript = facebookscript + '<script>(function(d, s, id) {';
-          facebookscript = facebookscript + 'var js, fjs = d.getElementsByTagName(s)[0];';
-          facebookscript = facebookscript + 'if (d.getElementById(id)) return;';
-          facebookscript = facebookscript + 'js = d.createElement(s); js.id = id;';
-          facebookscript = facebookscript + 'js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=485362104833338";';
-          facebookscript = facebookscript + 'fjs.parentNode.insertBefore(js, fjs);';
-          facebookscript = facebookscript + "}(document, 'script', 'facebook-jssdk'));</script>";
-       $('body').prepend(facebookscript);
+      $('body').prepend(facebookscript);
       //alert('here');  
     }
     
