@@ -518,6 +518,9 @@ ul.tag-list {
 .page-content img {
   margin:10px 0;
 }
+.page-content .card img {
+  margin:0;
+}
 .excerpt-wrap img {
   margin:0;
 }
