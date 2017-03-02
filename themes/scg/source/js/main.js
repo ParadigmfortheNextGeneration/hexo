@@ -77,7 +77,7 @@ var initializeEvents = function() {
       // We should add a breakpoint to hide internal items that don't fit.
       var parallax_image_height = $(item).children('img').innerHeight()  / 1.8;
       $(item).parent().css('height', parallax_image_height);
-      $(item).parallax();
+      $(item).parallax().addClass('parallax_processed');
     }
     
     var lazy_image_call = function(item) {

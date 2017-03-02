@@ -7,6 +7,7 @@ hide_date: true
 # - The Infinite Growth Complex.||/paradigm-for-the-next-generation/the-infinite-growth-complex
 # - Hegelian Geopolitics||/hegelian-geopolitics
 links_title:
+video: https://www.youtube.com/watch?v=1MmfCX2H7N8
 description: The world seems to have gone crazy hasn't it?
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 enable_parallax: true
@@ -24,7 +25,7 @@ Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tem
 ![test this](/images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg)
 
 
-and...test again
+and...test again?
 
 https://www.facebook.com/20531316728/posts/10154009990506729/
 

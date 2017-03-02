@@ -19,10 +19,10 @@ links_title:
 quotes:
 
 thumbnail:
-video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
+# video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
-enable_parallax: true
-featured_html: infinite_growth_complex_paradigm_next_generation_header.html
+enable_parallax: false
+# featured_html: infinite_growth_complex_paradigm_next_generation_header.html
 
 slideshow:
 
@@ -30,7 +30,7 @@ push_update: false
 show_update: true
 
 first_visit: first_visit_test.html
-cookie_name: InfiniteGrowthComplex-noPassive-Consumption
+# cookie_name: InfiniteGrowthComplex-noPassive-Consumption
 
 # html_injection_items:
 # - mailing_list.html
@@ -124,6 +124,8 @@ selling your life force for digits in a bank account.
 Modern day feudalism,
 equal opportunity enslavement.
 It's also by definition unsustainable.
+
+[Monetary Feudalism]
 
 Even if it weren't for the fact that we live on a finite planet with finite resources (a minor detail), all fractional reserve monetary systems have a trajectory that leads to a systemic breaking point, baked in the cake, by design.
 

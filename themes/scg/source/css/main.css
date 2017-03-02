@@ -41,16 +41,36 @@ body {
   color:#fff; 
 }
 .main {
-  padding-top:80px;
+  position: relative;
+  top:80px;
 }
 .full_width_wrap {
   background: #000;
   color:#fff;
-  padding: 20px 0;
+  padding: 0;
 }
+.clearer {
+  clear: both;
+  height: 1px;
+}
+.row {
+  margin-bottom:0;
+}
+.footer {
+  padding: 0;
+  position: static;
+  z-index: -2;
+}
+.footer .parallax-container {
+  height: auto !important;
+}
+
 .full_width_wrap.white {
   background: #fff;
   color:#000;
+}
+.full_width_wrap.introduction {
+  padding-bottom:20px;
 }
 .container {
   margin-top:0px;
@@ -139,12 +159,15 @@ textarea {
 .page-content a:link,
 .page-content a:active,
 .page-content a:visited {
-  color: #1e88e5;
+  color: #ff3d00;
   text-decoration: none;
 }
 .page-content a:hover {
   text-decoration: underline;
   color:#ff3d00;
+}
+a.deep-orange:hover {
+  color:yellow !important;
 }
 /*nav ul li a,
 nav ul li a:visited{
@@ -204,13 +227,16 @@ h3 {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top:0;
     -webkit-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
     -moz-box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
     box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.48);
   }
-.header-container,
-.footer-container {
+.header-container {
   background: #000;
+}
+.footer {
+  height: 1000px;
 }
 /*border-bottom:2px solid #1E88E5;*/
 
@@ -393,8 +419,11 @@ ul.aside-list li a:ul.aside-list li a:hover {
 time {
   font-size: 1.6em;
   font-family:'robotoblack';
-  display:inline;
+  display:block;
   color:#1e88e5;
+}
+time.update {
+  font-size:11px;
 }
 .description {
   font-family:'robotoblack';
@@ -403,7 +432,8 @@ time {
   font-weight: bold;
 }
 .content {
-  margin-top:20px;
+  top:20px;
+  position: relative;
 }
 
 .page-content {
@@ -411,13 +441,14 @@ time {
   line-height: 1.5em;
   font-size:2.1em;
 }
-.page-content p:first-child:first-letter {
+.page-content > p:first-child:first-letter {
   float: left;
   font-size: 73px;
   line-height: 60px;
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
+  color: #ff3d00;
 }
 .page-content .btn {
   font-family: sans-serif;
@@ -490,7 +521,7 @@ ul.tag-list {
    Media Styling
    ========================================================================== */
 
-.video_wrapper_outer {
+.page-content .video_wrapper_outer {
     margin-bottom:30px;
     width:100%;
 }
