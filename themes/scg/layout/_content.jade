@@ -47,7 +47,7 @@
         .center-align
           time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
           - if ((page.push_update || page.show_update) == true) {
-          time(class="update deep-orange-text text-accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
+          time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
           - } 
   - }
   
@@ -98,7 +98,5 @@
         - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
           .pagination !{pagination_nav}
         - }
-      .clearer  
-  .footer
-    include _footer
-        
+
+  .clearer      

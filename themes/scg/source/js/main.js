@@ -53,7 +53,7 @@ var initializeEvents = function() {
         var twitter_width = 500;
         if (window_width < 500) {
           twitter_width = window_width - 40;
-          alert(twitter_width);
+          //alert(twitter_width);
         }
         twttr.ready(function(evt) {
           twttr.widgets.createTweet(tweet_id, tweet_div, 
