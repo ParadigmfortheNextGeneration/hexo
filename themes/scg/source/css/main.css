@@ -54,7 +54,7 @@ body {
 }
 .clearer {
   clear: both;
-  height: 1px;
+  height: 0;
 }
 .rounded {
   -webkit-border-radius: 3px;
@@ -69,6 +69,19 @@ body {
   position: static;
   z-index: -2;
   min-height: 1000px;
+}
+.footer-nav ul li {
+  display: inline-block;
+  margin-right:10px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.footer-nav ul:last-child {
+  margin-right:0;
+}
+.footer .cc_by_nd {
+  width:150px;
+  margin-top:20px;
 }
 .footer .parallax-container {
   height: auto !important;
@@ -436,10 +449,10 @@ time.update {
   margin-top:10px;
 }
 .description {
-  font-family:'robotoblack';
-  font-size:3em;
+  font-family:'roboto';
+  font-size:2.5em;
   margin-bottom:25px;
-  font-weight: bold;
+  font-weight: 200;
 }
 .content {
   top:20px;
@@ -665,6 +678,10 @@ ul.tag-list {
 @media (max-width: 400px) {
   h1.page-title {
     font-size: 4em;
+  }
+  .description {
+    font-size:2em;
+    line-height: 1em;
   }
   blockquote {
     line-height: 1.3em;

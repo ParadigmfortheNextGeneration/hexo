@@ -76,7 +76,10 @@ var initializeEvents = function() {
       // We get the height of the image and apply the height to ensure we don't have a big overflow.
       // We should add a breakpoint to hide internal items that don't fit.
       var parallax_image_height = $(item).children('img').innerHeight()  / 1.8;
-      $(item).parent().css('height', parallax_image_height);
+      if (parallax_image_height >= 200) {
+        $(item).parent().css('height', parallax_image_height);
+      }
+      
       $(item).parallax().addClass('parallax_processed');
     }
     
