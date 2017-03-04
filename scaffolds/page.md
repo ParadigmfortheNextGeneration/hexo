@@ -13,6 +13,7 @@ tags:
 thumbnail:
 video:
 featured_image:
+enable_parallax:
 slideshow:
 
 ## Settings

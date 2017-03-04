@@ -4,20 +4,21 @@ description:
 date: {{ date }}
 push_update: false
 permalink:
+hashtag:
 links:
 links_title:
 
-tags: 
-- logic
+tags:
 
 ## Media
 thumbnail:
 video:
 featured_image:
+enable_parallax:
 slideshow:
 
 # show html one time to new users.
-first_visit: 'This is a test visit <a class="button-primary">Test this button!</a>'
+first_visit: # path from html directory
 cookie_name:
 
 ## Settings

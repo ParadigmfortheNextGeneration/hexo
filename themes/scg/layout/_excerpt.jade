@@ -7,7 +7,8 @@
 .excerpt-wrap.row
   - if (post.smallThumb) {
   div(class="col l4 m3")
-    img(class="lazy", data-src=post.smallThumb)
+    a(href="/"+post.path)
+      img(class="lazy", data-src=post.smallThumb)
   - }
   div(class=rightclass)
     h3.post-title

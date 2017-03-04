@@ -140,6 +140,8 @@ var initializeEvents = function() {
       $('body').prepend(facebookscript);
       //alert('here');  
     }
+    //var current_path = window.location.pathname;
+    
     
     $('#main_menu').mmenu({
       extensions	: [ 'theme-black', 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],

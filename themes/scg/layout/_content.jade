@@ -1,32 +1,4 @@
-- if (page.tags) {
--   var tags = page.tags.length
--  }
-
-- var content = htmlInjection(page.content, page.html_injection_items, page.html_injection_disable)
-
-
-- var content_container_class = "container"
-- var content_row_class = "row"
-- var content_class = "col l12"
-- var aside_class   = "col l12"
-
-- if (page.no_container == true) {
-  - content_container_class = "no_container"
-  - content_row_class = "no_row"
-  - var content_class = "no_column"
-  - var aside_class   = "no_column"
-- }
-
-- if (page.center == true) {
-- content_container_class += ' center-align'
-- } 
-
-- if (page.links && (page.no_container != true)) {
--   content_class = "col l7 m8"
--   aside_class =  "col l5 m4"
-- }
- 
-
+// Most variables are located in _variables.jade
 - if (page.title) {
 - var title = page.title.replace('-', '<br />')
 - }
@@ -36,67 +8,65 @@
 -     title = "Posts about " + page.tag[0].toUpperCase() + page.tag.substring(1)
 -   }
 - }
-  
-
-  
-  - if (!page.hide_title) {
-    .full_width_wrap.introduction
-      .container
-        h1.page-title !{title}
-        .description.center-align !{page.description}
-        .center-align
-          time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
-          - if ((page.push_update || page.show_update) == true) {
-          time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
-          - } 
-  - }
-  
-  - if (page.video) {
-    .featured_video !{page.video}
-  - }
-  
-  - if(page.featured_image || page.featured_html) {
-    - var featured_outer_class = "featured-outer-container"
-    - var image_inner_class = "image-inner-container"
-    
-    - if (page.enable_parallax) {
-    - var featured_outer_class = "parallax-container featured-outer-container"
-    - var image_inner_class = "parallax image-inner-container"
-    - }
-    
-    div(class=featured_outer_class)
-      - if (page.featured_html) {
-       .featured_html.container
-         div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
+- if (!page.hide_title) {
+.full_width_wrap.introduction
+  .container
+    h1.page-title !{title}
+    .description.center-align !{page.description}
+    .center-align
+      time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
+      - if ((page.push_update || page.show_update) == true) {
+      time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
       - } 
-      div(class=image_inner_class)
-        img(class="lazy", data-src=page.featured_image, alt=page.title)
-  - }
-  
-  .full_width_wrap.white
-    .content
-      div(class=content_container_class)
-        div(class=content_row_class)
-          div(class=content_class)
-            .page-content !{content}
-              - if (index)
-                - page.posts.each(function(post) {
-                    include _excerpt
-                - })
-                
-          - if (page.links) {
-          div(class=aside_class)
-              include _aside
-          - }
-          
-        - if (tags && page.show_tags && (page.layout == 'post'))
-          .row
-            div(class="tag_wrap col l12")
-              include _widgets/tags
-            
-        - if (page.archive == true) {
-        - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
-          .pagination !{pagination_nav}
-        - }
+- }
 
-  .clearer      
+- if (page.video) {
+  .featured_video !{page.video}
+- }
+
+- if(page.featured_image || page.featured_html) {
+  - var featured_outer_class = "featured-outer-container"
+  - var image_inner_class = "image-inner-container"
+  
+  - if (page.enable_parallax) {
+  - var featured_outer_class = "parallax-container featured-outer-container"
+  - var image_inner_class = "parallax image-inner-container"
+- }
+  
+div(class=featured_outer_class)
+  - if (page.featured_html) {
+   .featured_html.container
+     div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
+  - } 
+  div(class=image_inner_class)
+    img(class="lazy", data-src=page.featured_image, alt=page.title)
+- }
+
+.full_width_wrap.white
+  .clearer
+  .content
+    div(class=content_container_class)
+      div(class=content_row_class)
+        div(class=content_class)
+          .page-content !{content}
+            - if (index)
+              - page.posts.each(function(post) {
+                  include _excerpt
+              - })
+              
+        - if (page.links) {
+        div(class=aside_class)
+            include _aside
+        - }
+        
+      - if (tags && page.show_tags && (page.layout == 'post'))
+        .row
+          div(class="tag_wrap col l12")
+            include _widgets/tags
+          
+      - if (page.archive == true) {
+      - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
+        .pagination !{pagination_nav}
+      - }
+
+.clearer      

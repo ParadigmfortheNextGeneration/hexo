@@ -162,13 +162,37 @@ jsonContent:
     link: true
     permalink: true
     excerpt: true
+    thumbnail: true
     keywords: true # but only if root keywords option language was set
     text: true
     raw: false
     content: false
     categories: true
     tags: true
-    
+
+
+restful:
+  site: true        # hexo.config mix theme.config
+  posts_size: 10    # 文章列表分页，0 表示不分页
+  posts_props:      # 文章列表项的需要生成的属性
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    excerpt: false
+    content: false
+    keywords: false
+    categories: true
+    tags: true
+  categories: true
+  tags: true        
+  post: true
+  
+#category_generator:
+#  per_page: 10
+
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:

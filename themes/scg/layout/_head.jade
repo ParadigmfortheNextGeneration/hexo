@@ -1,5 +1,12 @@
-- var title = page.title ? page.title + ' | ' + config.title : config.title
+
 - var og_title = page.title ? page.title : config.title
+- var is_section = false
+- if (page.base.split('/')[0] == 'section') {
+-   is_section = true
+-   page.title = page.category
+- }
+- var head_title = page.title ? page.title + ' | ' + config.title : config.title
+- // page.category
 - if (page.tags) {
   - var tagCount = page.tags.length
   - if(tagCount != 0) {
@@ -27,7 +34,7 @@
 meta(charset='UTF-8')
 meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 
-title=title
+title=head_title
 meta(name="og:title" content=og_title)
 meta(name="og:site_name" content=config.title)
 meta(name="og:url" content=page.permalink)

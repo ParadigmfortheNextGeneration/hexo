@@ -54,7 +54,7 @@ body {
 }
 .clearer {
   clear: both;
-  height: 0;
+  height: 1px;
 }
 .rounded {
   -webkit-border-radius: 3px;
@@ -455,7 +455,7 @@ time.update {
   font-weight: 200;
 }
 .content {
-  top:20px;
+  margin:20px 0;
   position: relative;
 }
 
