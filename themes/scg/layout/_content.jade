@@ -11,13 +11,15 @@
 - if (!page.hide_title) {
 .full_width_wrap.introduction
   .container
-    h1.page-title !{title}
+    h1.page-title.flow-text !{title}
     .description.center-align !{page.description}
-    .center-align
-      time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
-      - if ((page.push_update || page.show_update) == true) {
-      time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
-      - } 
+    - if (page.hide_date == false) {
+      .center-align
+        time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
+        - if ((page.push_update || page.show_update) == true) {
+        time(class="rounded update white-text deep-orange accent-3" datetime=date_xml(page.updated), itemprop="dateModified")<span>UPDATED</span> <span>#{date(page.updated, 'MMMM DD, YYYY')}</span>
+        - }
+    - } 
 - }
 
 - if (page.video) {

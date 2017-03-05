@@ -1,10 +1,11 @@
 ---
 title: {{ title }}
+hide_title:
 description:
 date: {{ date }}
+hide_date: false
 push_update: false
 permalink:
-hashtag:
 links:
 links_title:
 
@@ -14,7 +15,7 @@ tags:
 thumbnail:
 video:
 featured_image:
-enable_parallax:
+enable_parallax: false
 slideshow:
 
 # show html one time to new users.
@@ -24,8 +25,6 @@ cookie_name:
 ## Settings
 hide_from_feed: false
 show_tags: true
-hide_date: false
-
 
 custom_js_files:
 custom_json_files:

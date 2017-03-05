@@ -1,10 +1,13 @@
 
 - var og_title = page.title ? page.title : config.title
 - var is_section = false
-- if (page.base.split('/')[0] == 'section') {
--   is_section = true
--   page.title = page.category
+- if (page.base) {
+  - if (page.base.split('/')[0] == 'section') {
+  -   is_section = true
+  -   page.title = page.category
+  - }
 - }
+
 - var head_title = page.title ? page.title + ' | ' + config.title : config.title
 - // page.category
 - if (page.tags) {
