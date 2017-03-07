@@ -188,7 +188,7 @@ You've got to break more than a few eggs to make these ommelettes.
 
 [Albright Clip]
 
-## [Cognitive Dissonance](/psychology/cognitive-dissonance)
+## Cognitive Dissonance
 
 But the American public identifies as the perpetual good guy,
 a city on the hill, a purveyor of peace and democracy.

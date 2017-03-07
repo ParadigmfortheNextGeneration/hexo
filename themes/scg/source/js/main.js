@@ -183,7 +183,6 @@ var initializeEvents = function() {
         side: 'right'
       });
     $('.sidr_close').click(function(){
-      //alert("CHECK!");
       $.sidr('close', 'sidr_menu');
       $.sidr('close', 'sidr_social');
       });

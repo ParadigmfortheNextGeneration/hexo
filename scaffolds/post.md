@@ -1,30 +1,35 @@
 ---
 title: {{ title }}
-hide_title:
-description:
+hide_title: false
+description: ""
 date: {{ date }}
 hide_date: false
 push_update: false
-permalink:
+show_update: false
+permalink: ""
+tags: []
+category: []
+hash_tag: ""
 links:
 links_title:
 
-tags:
 
 ## Media
 thumbnail:
 video:
 featured_image:
-enable_parallax: false
+enable_parallax:
 slideshow:
 
 # show html one time to new users.
 first_visit: # path from html directory
 cookie_name:
 
-## Settings
-hide_from_feed: false
-show_tags: true
+## Advanced Settings
+feed_title:
+feed_description:
+hide_from_feed:
+show_tags:
 
 custom_js_files:
 custom_json_files:

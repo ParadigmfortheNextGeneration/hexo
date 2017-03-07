@@ -33,7 +33,7 @@ Then there was Yemen, where the Obama administration <a href="http://time.com/45
 
 This warmongering continued till the very end. Here's <a href="http://www.independent.co.uk/news/world/americas/us-president-barack-obama-bomb-map-drone-wars-strikes-20000-pakistan-middle-east-afghanistan-a7534851.html">a map</a> of where the 26,171 thousand bombs Obama dropped just in his last year of office fell.
 
-![Bombs dropped by Obama in 2016](/images/war/maps_and_charts/bombs-obama.png)
+![Bombs dropped by Obama in 2016](/images/geopolitics/war/maps_and_charts/bombs-obama.png)
 
 You know it seems to me that the inhabitants of these countries would have preferred that you stand up against the wars that destroyed their homeland before and while it was happening, rather than take issue to where they are allowed to go in the aftermath. Just saying.
 

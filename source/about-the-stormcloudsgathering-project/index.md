@@ -25,15 +25,21 @@ The way we react, and or adapt to rapidly changing circumstances is often the de
 
 These are treacherous waters, 
 but believe it or not, I have hope;
-hope that takes into account realities (and or probabilities)
+hope that takes into account realities and probabilities
 that you may disturb you.
 
-Some reading this page are looking for clues to determine who's side I am on.
-Which team is he batting for? Blue team or red?
+Some will read this page looking for an out.
+Enemy positions can be dismissed.
+No need to consider the facts at hand.
 
-I'm not interested in partisan games.
-The left/right paradigm doesn't serve We the People.
-Divide and conquer makes you easy to control.
+"Which team is he batting for? Blue team or red?"
+
+I don't play partisan games.
+I don't buy into artificial group identities.
+The left/right paradigm doesn't serve the people.
+Never has, never will.
+
+**Divide and conquer makes you easy to control.**
 
 My loyalty is to those who stand against war,
 debt based, banker controlled money,
@@ -42,13 +48,11 @@ and the expansion and abuse of police state powers,
 
 "How do I know I can trust you?" is a question I hear in various forms.
 
-I don't ask you to trust me. 
-My job is to collect evidence, 
-connect it with logic,
-and present it in a clear concise way.
+I don't ask you to trust me. <br />
+My job is to collect evidence, connect it with logic, and present it in a clear, concise way.
+If successful, the vector of transmission (aka the messenger) is rendered irrelevant.
 
-**Ideas either stand on their own,
-or they don't stand at all.**
-The vector of transmission (aka the messenger) is irrelevant.
+**Ideas either stand on their own, or they don't stand at all.** 
+
 
 [To be continued...]

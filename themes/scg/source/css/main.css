@@ -52,6 +52,20 @@ body {
   color:#fff;
   padding: 0;
 }
+ol {list-style: none; counter-reset: li}
+ol li::before {
+  content: counter(li);
+  color: #ff3d00;
+  display: inline-block;
+  width: 1em;
+  font-size:2.1em;
+  position: relative;
+  top:11px;
+  margin-left: -1em;
+}
+ol li {counter-increment: li}
+
+
 .clearer {
   clear: both;
   height: 1px;
@@ -144,6 +158,13 @@ blockquote {
   margin-left:0;
 }
 
+blockquote em {
+  font-style:normal;
+  font-weight: bold;
+  display:block;
+  font-size:.8em;
+}
+
 audio,
 canvas,
 iframe,
@@ -227,6 +248,9 @@ h1.page-title {
 }*/
 h3 {
   font-size: 1em;
+}
+h3.post-title {
+  margin-bottom:10px;
 }
 .content h3.post-title a {
     color:#000;
@@ -442,17 +466,26 @@ time {
   display:block;
   color:#1e88e5;
 }
+.page-content time {
+  font-size: 15px;
+  display:inline-block;
+  margin-right:10px;
+}
 time.update {
-  font-size:11px;
+  font-size:11px !important;
   display: inline-block;
   padding:0px 10px;
   margin-top:10px;
+  line-height: 2em;
 }
 .description {
   font-family:'roboto';
   font-size:2.5em;
   margin-bottom:25px;
   font-weight: 200;
+}
+strong {
+  font-weight: 600;
 }
 .content {
   padding:30px 0;
@@ -491,6 +524,7 @@ time.update {
   margin-bottom:20px;
 }
 
+
 .tag_wrap {
   clear:left;
   margin-bottom:20px;
@@ -514,8 +548,9 @@ ul.tag-list {
   border-radius: 3px;
   padding: 10px 15px;
   list-style: none;
-  font-size:1.6em;
+  font-size:1.3em;
   color:white;
+  text-transform: uppercase;
 }
 .tag-list-item a:hover {
   background: #ff3d00;
@@ -532,7 +567,7 @@ ul.tag-list {
   font-weight: bold;
 }
 .pagination span {
-  background: #666;
+  background: #1e88e5;
 }
 
 .modal {
