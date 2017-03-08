@@ -1,4 +1,4 @@
-// Most variables are located in _variables.jade
+// Most variables are declared in _variables.jade
 - if (page.title) {
 - var title = page.title.replace('-', '<br />')
 - }
@@ -70,5 +70,6 @@ div(class=featured_outer_class)
       - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
         .pagination !{pagination_nav}
       - }
-
+      
+include _share
 .clearer      

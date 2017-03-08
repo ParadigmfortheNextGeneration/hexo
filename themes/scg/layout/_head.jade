@@ -48,7 +48,15 @@ meta(name='og:type' content='article')
 - if (page.largeThumb) {
   meta(name='og:image', content=config.url+page.largeThumb)
   meta(name='twitter:image', content=config.url+page.largeThumb)
-- } 
+- }
+- else if (page.breaking) {
+  meta(name='og:image', content=config.url+theme.breaking_thumb)
+  meta(name='twitter:image', content=config.url+theme.breaking_thumb)
+- }
+- else {
+  meta(name='og:image', content=config.url+theme.default_thumb)
+  meta(name='twitter:image', content=config.url+theme.default_thumb)
+- }
 
 meta(name='twitter:card', content='summary')
 meta(name='twitter:site', content= '@'+ theme.twitter)

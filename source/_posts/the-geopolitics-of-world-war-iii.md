@@ -9,7 +9,7 @@ show_update: false
 permalink: the-geopolitics-of-world-war-iii
 tags: [federal reserve, fractional reserve banking, gold, gold shock, gold standard, isis, money, petrodollar, petrodollar recycling, russia, syria, ukraine, war, world war iii]
 category: [war]
-hash_tag: 
+hash_tag: NoWar
 date: 2014-09-11 09:11:14
 links:
 links_title:
@@ -89,8 +89,6 @@ Having global trade predominately in dollars also provides the Washington with a
 This petrodollar system stood unchallenged until September of 2000 when <a rel="nofollow" href="http://english.peopledaily.com.cn/english/200009/26/eng20000926_51324.html">Saddam Hussein announced</a> his decision to switch Iraq's oil sales off of the dollar to Euros. This was a direct attack on the dollar, and easily the most important geopolitical event of the year, but <a href="http://edition.cnn.com/2000/WORLD/meast/10/30/iraq.un.euro.reut/">only one article in the western media even mentioned it.</a>   
 
 In the same month that Saddam announced he was moving away from the dollar, an organization called the “The Project for  a New American Century”, of which Dick Cheney just happened to be a member,  released a document entitled “REBUILDING AMERICA’S DEFENSES Strategy, Forces and Resources For a New Century”. This document called for massive increases in U.S. military spending and a much more aggressive foreign policy in order to expand U.S. dominance world wide. However the document lamented that achieving these goals would take many years “absent some catastrophic and catalyzing event – like a new Pearl Harbor”.
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/9863777" width="479" height="511" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 One year later they got it.
 

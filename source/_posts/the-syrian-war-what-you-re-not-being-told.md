@@ -37,13 +37,9 @@ http://www.youtube.com/watch?v=9RC1Mepk_Sw
 
 There are three primary psychological techniques that the powers that be in any given era use to build up the public support needed to take a country to war:
 
-1. Create the impression that the aggressor is actually acting in self defense or in defense of a helpless nation.
-This can be done by exaggerating the danger posed by an enemy, fabricating an attack and blaming it on the enemy, or by intentionally provoking the enemy into a response.
-2. Build up a crusade mythology, one that presents the aggressors as fighting for a higher ideal, or for the good of all humanity.}}
-In our current era the meme of “Spreading Democracy”, “Fighting Terrorism” or "Defending human rights"are the most commonly used.
-
-3. De-humanize the enemy.
-War is mass murder, therefore presenting the enemy as evil, barbaric, or subhuman is essential unless you want your citizens and your soldiers questioning the morality of their actions. This pattern is often supported and augmented by a sense of cultural or racial superiority. The way Islamophobia is capitalized on to build moral support for this phony war on terror is a perfect example.
+1. **Create the impression that the aggressor is actually acting in self defense or in defense of a helpless nation.** This can be done by exaggerating the danger posed by an enemy, fabricating an attack and blaming it on the enemy, or by intentionally provoking the enemy into a response.
+2. **Build up a crusade mythology, one that presents the aggressors as fighting for a higher ideal, or for the good of all humanity.** In our current era the meme of “Spreading Democracy”, “Fighting Terrorism” or "Defending human rights"are the most commonly used.
+3. **De-humanize the enemy.** War is mass murder, therefore presenting the enemy as evil, barbaric, or subhuman is essential unless you want your citizens and your soldiers questioning the morality of their actions. This pattern is often supported and augmented by a sense of cultural or racial superiority. The way Islamophobia is capitalized on to build moral support for this phony war on terror is a perfect example.
 
 The U.S. government has a long illustrious history of using these techniques, and they keep using them because they work.
 
@@ -53,7 +49,7 @@ The United States has been trying to get Iran under its thumb for a long time. I
 
 The U.S. didn't like that so they tried to take Iran down by arming and funding Saddam Hussein against the Iranians. This was during the Iranian Iraq war, also referred to as the first Persian Gulf War which lasted from 1980 to 1988. The U.S. continued its support for Iraq even though they knew full well that he was using chemical weapons against the Iranians.
 
-This now declassified top secret memo from Nov. 4, 1983 documents chemical weapons use by Iraq, and discusses Iran's likely reactions.
+[This now declassified top secret memo from Nov. 4, 1983](http://foreignpolicy.com/2013/08/26/exclusive-cia-files-prove-america-helped-saddam-as-he-gassed-iran/) documents chemical weapons use by Iraq, and discusses Iran's likely reactions.
 
 Here's a second memo, written on Feb. 24, 1984 to the director of Central Intelligence predicting that Iraq will use nerve agents against Iran.
 
