@@ -174,7 +174,7 @@ ol li {counter-increment: li}
   border: 1px solid #000;
 }
 a.share_item:hover {
-  border: 1px solid #1e88e5;
+  border: 1px solid #ff3d00;
 }
 .share_item .fa {
   font-size:17px;
