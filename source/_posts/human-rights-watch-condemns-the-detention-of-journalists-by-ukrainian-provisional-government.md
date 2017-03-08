@@ -2,7 +2,7 @@
 uuid: 281ce180-035e-11e7-b504-07a553008c9b
 title: Human Rights Watch Condemns the Detention of Journalists by Ukrainian Provisional Government
 hide_title: false
-description: The Ukrainian provisional government is attempting to regain control of the flow of information in the worst possible way: by cracking down on journalists.
+description: "The Ukrainian provisional government is attempting to regain control of the flow of information in the worst possible way: by cracking down on journalists."
 hide_date: false
 push_update: false
 show_update: false
