@@ -15,10 +15,10 @@ links_title:
 
 
 ## Media
-thumbnail:
-video:
-featured_image:
-enable_parallax:
+thumbnail: ""
+video: ""
+featured_image: ""
+enable_parallax: false
 slideshow:
 
 # show html one time to new users.

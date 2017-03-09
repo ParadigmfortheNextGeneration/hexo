@@ -95,8 +95,8 @@ exclude_generator:
 - home
 
 html_injection_items:
-  - mailing_list.html
-  - follow.html
+  - /html/ajax_elements/mailing_list.html
+  - /html/ajax_elements/follow.html
   
 html_minifier:
   enable: false

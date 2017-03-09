@@ -14,7 +14,7 @@ date: 2013-10-31 15:31:21
 links:
 links_title:
 thumbnail:
-video:
+video: http://youtu.be/XQtxcKT-u_Y
 featured_image:
 enable_parallax:
 slideshow:

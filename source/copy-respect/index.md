@@ -16,4 +16,15 @@ video:
 featured_image:
 slideshow:
 push_update:
+html_injection_disable: true
 ---
+Test this link...
+
+
+[Test2](/html/psychology/hegelian_geopolitics.html)
+
+http://test.com
+
+http://www.youtube.com/watch?v=cDCfTIapds0
+
+Tt

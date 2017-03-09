@@ -26,7 +26,7 @@ cookie_name:
 ## Settings
 hide_from_feed: false
 show_tags: true
-html_injection_disable: false
+html_injection_disable: true
 center: false
 
 custom_js_files:

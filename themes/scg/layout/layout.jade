@@ -4,11 +4,10 @@ html(lang='en-us')
   head
     include _head
   body(itemscope, itemtype='https://schema.org/WebPage')
-    
-    div(id="html_wrapper")
-      
-      .header
+    .header
         include _header
+    div(id="html_wrapper") 
+      
       
       div(class="main "+ main_classes)
         include _content

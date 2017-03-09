@@ -53,13 +53,12 @@ var initializeEvents = function() {
         var twitter_width = 500;
         if (window_width < 500) {
           twitter_width = window_width - 40;
-          //alert(twitter_width);
         }
         twttr.ready(function(evt) {
           twttr.widgets.createTweet(tweet_id, tweet_div, 
             {
               conversation : 'none',    // or all
-              theme        : 'dark', // or dark
+              theme        : 'light', // or dark
               dnt          : 'true',
               width        :  twitter_width,
               align        : 'center'
@@ -68,8 +67,8 @@ var initializeEvents = function() {
     }
     
     var injection_html_call = function(item) {
-      var file_name = $(item).attr('data-injection-html');
-      $(item).removeClass('injection_html').addClass('injection_html_processed').load('/html/'+file_name, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
+      var file_path = $(item).attr('data-injection-html');
+      $(item).removeClass('injection_html').addClass('injection_html_processed').load(file_path, initializeEvents).css('visibility','visible').hide().fadeIn('slow');
     }
     
     var parallax_load = function(item) {
@@ -132,13 +131,11 @@ var initializeEvents = function() {
    
     
     // Load javascript for social media subscribe buttons asynchronously.
-    var social_open = function() {
-      
-      
+    // We should make this so that the code is only added once (though it doesn't seem to cause any problems as is)
+    var social_open = function() { 
       $(youtubesubscribescript).insertBefore( "#side-subscribe" );
       $(twitterscript).insertBefore( "#side-subscribe" );
       $('body').prepend(facebookscript);
-      //alert('here');  
     }
     //var current_path = window.location.pathname;
     
@@ -177,6 +174,7 @@ var initializeEvents = function() {
             pageSelector: "#html_wrapper"
          }
       });
+    
     $('.follow').sidr({
         name: 'sidr_social',
         onOpen: social_open,
