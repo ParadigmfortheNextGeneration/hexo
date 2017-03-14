@@ -17,6 +17,8 @@ thumbnail:
 video:
 featured_image:
 enable_parallax: false
+parallax_height: false
+parallax_overlay_image: false
 slideshow:
 
 # show html one time to new users.

@@ -11,8 +11,11 @@
 - if (!page.hide_title) {
 .full_width_wrap.introduction
   .container
-    h1.page-title.flow-text !{title}
+    h1.page-title !{title}
+    - if (!page.hide_description) {
     .description.center-align !{page.description}
+    - }
+    
     - if (page.hide_date == false) {
       .center-align
         time(datetime=date_xml(page.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(page.date, 'MMMM DD, YYYY')}</span>
@@ -22,26 +25,38 @@
     - } 
 - }
 
-- if (page.video) {
-  .featured_video !{page.video}
-- }
+
 
 - if(page.featured_image || page.featured_html) {
-  - var featured_outer_class = "featured-outer-container"
+  - var featured_outer_class = "featured-outer-container center-align"
   - var image_inner_class = "image-inner-container"
   
   - if (page.enable_parallax) {
-  - var featured_outer_class = "parallax-container featured-outer-container"
-  - var image_inner_class = "parallax image-inner-container"
+  - featured_outer_class = "parallax-container " + featured_outer_class
+  - image_inner_class = "parallax " + image_inner_class
+  - var parallax_container_styles = '';
+  - if (page.parallax_height) {
+  - parallax_container_styles = 'height: ' + page.parallax_height
+  - featured_outer_class = "config_height " + featured_outer_class
+  - }
 - }
+
+
   
-div(class=featured_outer_class)
+div(class=featured_outer_class style=parallax_container_styles)
+  - if (page.parallax_overlay_image) {
+  img(src="" data-src=page.parallax_overlay_image class="lazy parallax-overlay")
+  - }
   - if (page.featured_html) {
-   .featured_html.container
-     div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
+  .featured_html.container
+    div(class="injection_html_item injection_html" data-injection-html=page.featured_html)
   - } 
   div(class=image_inner_class)
     img(class="lazy", data-src=page.featured_image, alt=page.title)
+- }
+
+- if (page.video) {
+  .featured_video !{page.video}
 - }
 
 .full_width_wrap.white

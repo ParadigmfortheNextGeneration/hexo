@@ -1,6 +1,9 @@
 var initializeEvents = function() {
-  var youtubesubscribescript = '<script src="https://apis.google.com/js/platform.js"></script>'
+  var window_width = $(window).innerWidth();
+  $("h1.page-title").fitText(1.3, { minFontSize: '20px', maxFontSize: '80px' });
+  $('select').material_select();
   
+  var youtubesubscribescript = '<script src="https://apis.google.com/js/platform.js"></script>'
   var twitterscript =                 '<script>window.twttr = (function(d, s, id) {';
       twitterscript = twitterscript + 'var js, fjs = d.getElementsByTagName(s)[0],';
       twitterscript = twitterscript + 't = window.twttr || {};';
@@ -74,10 +77,13 @@ var initializeEvents = function() {
     var parallax_load = function(item) {
       // We get the height of the image and apply the height to ensure we don't have a big overflow.
       // We should add a breakpoint to hide internal items that don't fit.
-      var parallax_image_height = $(item).children('img').innerHeight()  / 1.8;
-      if (parallax_image_height >= 200) {
-        $(item).parent().css('height', parallax_image_height);
+      if (!$(item).parent().hasClass("config_height") || window_width < 1000) {
+        var parallax_image_height = $(item).children('img').innerHeight()  / 1.5;
+        if (parallax_image_height >= 100) {
+          $(item).parent().css('height', parallax_image_height);
+        }
       }
+      
       
       $(item).parallax().addClass('parallax_processed');
     }

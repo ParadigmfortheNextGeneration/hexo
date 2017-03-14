@@ -7,8 +7,11 @@
 - if (page.tags) {
 -   var tags = page.tags.length
 -  }
+- var content = ''
+- if (page.content) {
+-  content = htmlInjection(page.content, page.html_injection_items, page.html_injection_disable)
+- }
 
-- var content = htmlInjection(page.content, page.html_injection_items, page.html_injection_disable)
 
 
 - var content_container_class = "container"

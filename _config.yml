@@ -16,6 +16,9 @@ url: http://stormcloudsgathering.com
 root: /
 permalink: :title/
 permalink_defaults:
+  
+
+footer_featured: http://res.cloudinary.com/scg/image/upload/v1489160472/headers/Footer-background.jpg
 
 # Directory
 source_dir: source

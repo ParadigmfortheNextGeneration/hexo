@@ -4,10 +4,10 @@ html(lang='en-us')
   head
     include _head
   body(itemscope, itemtype='https://schema.org/WebPage')
-    .header
-        include _header
+    
     div(id="html_wrapper") 
-      
+      .header
+        include _header
       
       div(class="main "+ main_classes)
         include _content
@@ -27,6 +27,7 @@ html(lang='en-us')
       
       script(src='/js/vendor/jquery-1.11.2.min.js')
       script(src='/js/vendor/jquery.form-defaults.js')
+      script(src='/js/vendor/FitText/jquery.fittext.js')
       script(src='/js/vendor/materialize.min.js')
       script(src='/js/vendor/share-selected-text/dist/shareSelectedText.min.js')
       script(src='/js/vendor/jquery.viewport.mini.js')

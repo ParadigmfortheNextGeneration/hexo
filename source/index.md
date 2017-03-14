@@ -1,23 +1,23 @@
 ---
-title: The truth is extreme. To make it moderate is to lie.
-hide_title: true
+title: Everything is about to change.
+hide_title: false
 hide_date: true
 #links:
 # - Paradigm for the Next Generation||/paradigm-for-the-next-generation
 # - The Infinite Growth Complex.||/paradigm-for-the-next-generation/the-infinite-growth-complex
 # - Hegelian Geopolitics||/hegelian-geopolitics
 links_title:
-video: https://www.youtube.com/watch?v=1MmfCX2H7N8
-description: The world seems to have gone crazy hasn't it?
-featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
+# video: https://www.youtube.com/watch?v=1MmfCX2H7N8
+description: We need more than a change in the system.
+parallax_html: We need a new way, a new [Paradigm](/Paradigm-for-the-Next-Generation)
+hide_description: false
+# featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
 enable_parallax: true
 html_injection_disable: true
 center: false
 no_container:
 ---
-
-# This is the home page!
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat.
+Sem. Morbi id urna in diam dignissim feugiat.
 
 https://twitter.com/zerohedge/status/824003737207341058
 

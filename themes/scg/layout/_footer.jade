@@ -3,17 +3,21 @@
     .footer-nav
       ul
         li
-          a(href='/about-the-stormcloudsgathering-project') About
+          a(href='/project/StormCloudsGathering') About
         li
-          a(href='/get-involved') Get Involved
+          a(href='/project/get-involved') Get Involved
         li
-          a(href='/contact') Contact
+          a(href='/project/contact') Contact
         li
-          a(href='/donate') Donate
-    a(href="/copy-respect")      
+          a(href='/project/donate') Donate
+    a(href="project/copyright")      
       img(src="" data-src="/images/third_party_branding/CC-BY-ND.png" class="lazy cc_by_nd")
-    a(href="/about-the-stormcloudsgathering-project")
+    a(href="/project/stormcloudsgathering")
       img(src="" data-src="/images/branding/Footer_StormCloudsGathering.png" class="lazy")
-    
-  .parallax
-    img(src="" data-src="/images/branding/Footer_Background.jpg" class="lazy")
+   
+  - if (config.footer_featured)  {
+    // TODO: Set parallax via config variable.
+    .parallax
+      img(src="" data-src=config.footer_featured class="lazy")
+  - }
+  
