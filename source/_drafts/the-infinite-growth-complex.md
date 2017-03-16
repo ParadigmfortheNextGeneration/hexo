@@ -264,7 +264,7 @@ by manipulating and provoking artificial group identities.
 The monopoly on money must be taken back from the banks,
 decentralized, and never returned.
 This calls for economic models and vectors of exchange
-that renders the current system irrelevant,
+that render the current system irrelevant,
 then obsolete.
 
 ## The Transition 

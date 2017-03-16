@@ -1,4 +1,8 @@
-.parallax-container
+- var footer_wrap_classes = "footer_wrap"
+- if (config.footer_parallax) {
+- footer_wrap_classes = footer_wrap_classes + " parallax-container"
+-}
+div(class=footer_wrap_classes)
   .footer-html.container.center-align
     .footer-nav
       ul
@@ -15,9 +19,9 @@
     a(href="/project/stormcloudsgathering")
       img(src="" data-src="/images/branding/Footer_StormCloudsGathering.png" class="lazy")
    
-  - if (config.footer_featured)  {
+  - if (config.footer_parallax)  {
     // TODO: Set parallax via config variable.
     .parallax
-      img(src="" data-src=config.footer_featured class="lazy")
+      img(src="" data-src=config.footer_parallax class="lazy")
   - }
   

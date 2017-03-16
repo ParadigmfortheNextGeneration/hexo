@@ -285,6 +285,9 @@ h1.page-title {
 .page-content h2 {
   font-size:1.8em;
 }
+h4 {
+  font-size: 1.1em;
+}
 /*.page-content h2 {
   background: #000;
   color:#fff;
@@ -666,6 +669,9 @@ ul.tag-list {
 .page-content img {
   margin:10px 0;
 }
+.page-content .col img {
+  margin:0 0 20px 0;
+}
 .page-content .card img {
   margin:0;
 }
@@ -747,6 +753,7 @@ ul.tag-list {
     word-spacing: -0.1em;
   }
 }
+
 
 @media screen and (max-width: 560px) {
   .donate {
