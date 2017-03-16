@@ -274,33 +274,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1 {
-    font-size:4em;
+  font-size:40px;
 }
+h2 {
+  font-size:30px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+}
+
 h1.page-title {
   margin-top:50px;
   font-size:5.5em;
   
   text-align: center;
 }
-.page-content h2 {
-  font-size:1.8em;
-}
-h4 {
-  font-size: 1.1em;
+.page-content h1 {
+  
 }
 /*.page-content h2 {
-  background: #000;
-  color:#fff;
-  padding:30px;
-}
-.page-content h2 a:link,
-.page-content h2 a:visited,
-.page-content h2 a:active{
-  color:#fff;
+  font-size:1.8em;
 }*/
-h3 {
-  font-size: 1em;
-}
+
+
 h3.post-title {
   margin-bottom:10px;
 }
@@ -557,7 +556,7 @@ strong {
 .page-content {
   font-family: "Nice Serif" ,Cambria,"Times New Roman",Times,serif;
   line-height: 1.5em;
-  font-size:2.1em;
+  font-size:21px;
 }
 .page-content > p:first-child:first-letter {
   float: left;

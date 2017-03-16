@@ -19,6 +19,8 @@ permalink_defaults:
   
 
 # footer_parallax: http://res.cloudinary.com/scg/image/upload/v1489160472/headers/Footer-background.jpg
+after_content:
+  - /_html/donate.html
 
 # Directory
 source_dir: source

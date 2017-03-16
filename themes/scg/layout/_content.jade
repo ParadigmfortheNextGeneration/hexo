@@ -70,7 +70,7 @@ div(class=featured_outer_class style=parallax_container_styles)
               - page.posts.each(function(post) {
                   include _excerpt
               - })
-              
+                 
         - if (page.links) {
         div(class=aside_class)
             include _aside
@@ -85,6 +85,9 @@ div(class=featured_outer_class style=parallax_container_styles)
       - var pagination_nav = paginator({prev_text: "&laquo Previous", next_text: "Next &raquo;"})
         .pagination !{pagination_nav}
       - }
-      
-include _share
+    
+- if (!page.after_content_disable) {
+- var after_blocks = after_content(page);
+.full_width_wrap.white !{after_blocks}
+- }
 .clearer      
