@@ -41,14 +41,15 @@ html {
 }
 
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-  font-size:62.5%;
   background: #000;
   color:#fff; 
 }
 .main {
   position: relative;
   margin-top:80px;
+  font-family: "Nice Serif" ,Cambria,"Times New Roman",Times,serif;
+  line-height: 1.5em;
+  font-size:21px;
 }
 .main.with_title {
   margin-top:110px;
@@ -94,7 +95,7 @@ ol li {counter-increment: li}
 .footer-nav ul li {
   display: inline-block;
   margin-right:10px;
-  font-size: 1.5em;
+  font-size: 15px;
   text-transform: uppercase;
 }
 .footer-nav ul:last-child {
@@ -182,7 +183,9 @@ a.share_item:hover {
 }
 .share_message {
   position: relative;
-  top:-11px;
+  top:-16px;
+  font-size:11px;
+  font-family: sans-serif;
 }
 
 hr {
@@ -274,16 +277,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 h1 {
-  font-size:40px;
+  font-size:50px;
 }
 h2 {
-  font-size:30px;
+  font-size:40px;
 }
 h3 {
-  font-size: 22px;
+  font-size: 35px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 h1.page-title {
@@ -432,6 +435,14 @@ h3.post-title {
 form {
   margin-bottom: 20px;
 }
+.btn {
+  font-family: sans-serif;
+  font-size:12px;
+  font-weight: bold;
+}
+.input-field {
+  font-family:sans-serif;
+}
 
 input:not([type]),
 input[type="text"],
@@ -446,13 +457,16 @@ input[type="tel"],
 input[type="number"],
 input[type="search"],
 textarea.materialize-textarea,
-.select-dropdown{
+.select-dropdown {
   border: 1px solid #1e88e5!important;
   padding:0 10px !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   box-sizing: border-box;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #000;
 }
 
 input:focus:not([type]):not([readonly]),
@@ -541,7 +555,7 @@ time.update {
 }
 .description {
   font-family:'roboto';
-  font-size:2.5em;
+  font-size:25px;
   margin-bottom:25px;
   font-weight: 200;
 }
@@ -553,11 +567,6 @@ strong {
   position: relative;
 }
 
-.page-content {
-  font-family: "Nice Serif" ,Cambria,"Times New Roman",Times,serif;
-  line-height: 1.5em;
-  font-size:21px;
-}
 .page-content > p:first-child:first-letter {
   float: left;
   font-size: 73px;

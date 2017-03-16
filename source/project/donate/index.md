@@ -19,17 +19,9 @@ center: false
 no_container:
 after_content_disable: false
 ---
-# H1 Test
-## H2 Teset
-### H3 test
-#### h4 test
-
 ### This project is open source.
 We do not rely on advertising.<br/>
 Advertising dollars are used as leverage to shut down dissent.<br/>
 We have first hand experience with this.</p>
 
 **Your donations ensure the continuity of this project both on the <a href="/project/StormCloudsGathering">media front</a>, and in the <a href="/project/pongovi">physical world.</a>**
-
-
-
