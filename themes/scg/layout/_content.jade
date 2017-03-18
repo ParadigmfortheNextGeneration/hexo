@@ -11,9 +11,25 @@
 - if (!page.hide_title) {
 .full_width_wrap.introduction
   .container
+    - if (page.title_link) {
+    h1.page-title
+      a(href=page.title_link) !{title}
+    - }
+    - else {
     h1.page-title !{title}
+    - }
+    
     - if (!page.hide_description) {
     .description.center-align !{page.description}
+    - }
+    
+    - if (page.next) {
+    - var next_text = "NEXT"
+    - if (page.next_text) {
+    - next_text = page.next_text
+    - }
+    .next_wrap.center-align
+      a(href=page.next class="btn deep-orange accent-3 waves-effect waves-yellow") !{next_text}
     - }
     
     - if (page.hide_date == false) {

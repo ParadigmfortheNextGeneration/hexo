@@ -8,7 +8,7 @@ subtitle:
 description:
 author: StormCloudsGathering
 language:
-timezone:
+timezone: America/Dominica
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -20,7 +20,18 @@ permalink_defaults:
 
 # footer_parallax: http://res.cloudinary.com/scg/image/upload/v1489160472/headers/Footer-background.jpg
 after_content:
-  - /_html/donate.html
+  - /_html/site/donate.html
+  
+html_injection_items:
+  - /ajax_html/site/mailing_list.html
+  - /ajax_html/site/follow.html
+
+rss_push_title: The future of this project is in your hands!
+rss_push_description: We're on the brink of something momentous.
+rss_push_link: http://stormcloudsgathering.com/donate
+
+
+
 
 # Directory
 source_dir: source
@@ -99,9 +110,7 @@ theme: scg
 exclude_generator:
 - home
 
-html_injection_items:
-  - /html/ajax_elements/mailing_list.html
-  - /html/ajax_elements/follow.html
+
   
 html_minifier:
   enable: false

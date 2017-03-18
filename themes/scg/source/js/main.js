@@ -144,47 +144,17 @@ var initializeEvents = function() {
       $('body').prepend(facebookscript);
     }
     //var current_path = window.location.pathname;
-    
-    
-    $('#main_menu').mmenu({
-      extensions	: [ 'theme-black', 'effect-slide-menu', 'shadow-page', 'shadow-panels' ],
-					keyboardNavigation 		: true,
-					screenReader 			: true,
-					counters				: true,
-      navbar 	    : {
-						title	: 'StormCloudsGathering'
-					},              
-      navbars	    : [
-						{
-							position	: 'top',
-							content		: [ 'searchfield' ]
-						}, {
-							position	: 'top',
-							content		: [
-								'prev',
-								'title',
-								'close'
-							]
-						}
-					]
-      }, {
-         // configuration
-         "searchfield": {
-            "clear": true
-         },
-         keyboardNavigation: {
-            enabled: true,
-            enhance: true
-          },
-         offCanvas: {
-            pageSelector: "#html_wrapper"
-         }
-      });
+
     
     $('.follow').sidr({
         name: 'sidr_social',
         onOpen: social_open,
         side: 'right'
+      });
+    $('#menu_button').sidr({
+        name: 'sidr_menu',
+        onOpen: social_open,
+        side: 'left'
       });
     $('.sidr_close').click(function(){
       $.sidr('close', 'sidr_menu');
