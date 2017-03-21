@@ -1,9 +1,10 @@
 ---
-title: Time to Leave the United States?
-title_link: /next
-next: /next
-next_text: 'What you need to know <span class="fa fa-play"></span>'
-hide_title: false
+title: StormCloudsGathering
+title_text:
+title_link:
+button_link: 
+#button_text: 'What you need to know <span class="fa fa-play"></span>'
+hide_title: true
 hide_date: true
 #links:
 # - Paradigm for the Next Generation||/paradigm-for-the-next-generation

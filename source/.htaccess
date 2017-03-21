@@ -10,8 +10,8 @@ deny from all
 ## Prevent directory listings
 Options All -Indexes
 
-
 ## Redirects
 Redirect 301 /donate /project/donate
+Redirect 301 /next /project/next
 Redirect 301 /scg_updates http://feedburner.google.com/fb/a/mailverify?uri=Stormcloudsgathering&amp%3Bloc=en_US
 Redirect 301 project/stormcloudsgathering /project/StormCloudsGathering

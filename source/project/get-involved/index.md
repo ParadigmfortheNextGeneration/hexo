@@ -1,9 +1,8 @@
 ---
 uuid: c2dbeb60-0130-11e7-a594-d73e4d1c1906
-title: The StormCloudsGathering Project
-hide_title: true
+title: Get Involved
+hide_title: false
 tags:
-  - logic
 show_tags: true
 hide_date: true
 date: 2017-03-04 19:17:39
@@ -20,41 +19,19 @@ push_update:
 html_injection_disable: true
 center:
 ---
-During times of upheaval history can turn on a dime, and often does.
-The way we react, and or adapt to rapidly changing circumstances is often the determining variable. Our response is shaped by our world view, and our world view by the dominant cultural narrative (which in the age of instant, global communication is shifting faster than ever before).
+People often ask how they can help with the media project, and or with the open source learning center we are in the process of setting up. The answer depends a lot on your life situation, level of motivation, and availability.  Right now we maintain online communication with select network of online activists/bloggers. Our current situation prevents us from spending all day chatting and debating online (we live off-grid, with limited electricity and mobile only internet access), and we have found that when requesting assistance for digital work (graphic design etc...) communications often take up more time than is gained. In the long term, we will be giving priority to on-site collaboration (that's where this gets interesting).
 
-These are treacherous waters, 
-but believe it or not, I have hope;
-hope that takes into account realities and probabilities
-that you may disturb you.
 
-Some reading this page are looking for clues to determine who's side I am on.
-Which team is he batting for? Blue team or red?
-More to the point, they are looking for an out.
-Enemy positions can be dismissed with prejudice;
-facts and evidence rendered irrelevant.
+### Digital Activism
+* Spread videos, articles and memes on social media.
+* Start a blog or Facebook page.
+* Network with bloggers and/or public figures.
 
-You're not going to find any relief from that angle.
-I don't buy into any prepackaged group identities.
-
-**I stand with those who stand against wars of aggression (covert, economic, or conventional),
-debt based, banker controlled money,
-and the expansion and abuse of police state power,
-REGARDLESS OF WHO IS IN OFFICE.**
-
-These are lines that must be drawn, especially when unpopular.
-It's a common ground for a coalition of the sane.
-Those who have followed my work for any length of time know that I consistently hold to these principles.
-
-**"How do I know I can trust you?"** is a question I hear in various forms.
-
-I don't ask you to trust me. 
-My job is to collect evidence, 
-connect it with logic,
-and present it in a clear concise way.
-
-**Ideas either stand on their own, or they don't stand at all.**
-The messenger is just a vector of transmission.
-Trust must be earned.
-
-[To be continued...]
+### Local Activism
+* Hang up posters, pass out flyers or post stickers around town.
+* Organize documentary nights at your house.
+* Connect with existing organizations in your area, and network with activists.
+* Talk to a random person about something that matters.
+ 
+### On-site
+A lot of you have expressed interest in coming to help out on site with the open source learning center we are building. We're almost ready. Our goal is to be ready to accept visitors starting in the Summer of 2017. Be sure to sign up for email updates if you want to be notified when we start accepting applications.

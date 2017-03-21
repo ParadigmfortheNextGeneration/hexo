@@ -97,7 +97,14 @@ var initializeEvents = function() {
     
     var fb_load = function(item) {
       $(item).addClass('fb_item_processed').removeClass('fb_post_wrap');
-      $('body').prepend(facebookscript);
+      if ($('body').hasClass('fb_loaded')) {
+        FB.XFBML.parse(document.getElementById('result'));
+        //code
+      }
+      else {
+        $('body').prepend(facebookscript).addClass('fb_loaded');
+      }  
+      
     }
     
     $(".fb_post_wrap:in-viewport").each(function(){
@@ -137,11 +144,17 @@ var initializeEvents = function() {
    
     
     // Load javascript for social media subscribe buttons asynchronously.
-    // We should make this so that the code is only added once (though it doesn't seem to cause any problems as is)
+    // We should make this so that the code is only added once (done for facebook)
     var social_open = function() { 
       $(youtubesubscribescript).insertBefore( "#side-subscribe" );
       $(twitterscript).insertBefore( "#side-subscribe" );
-      $('body').prepend(facebookscript);
+      if ($('body').hasClass('fb_loaded')) {
+        FB.XFBML.parse(document.getElementById('result'));
+        //code
+      }
+      else {
+        $('body').prepend(facebookscript).addClass('fb_loaded');
+      }  
     }
     //var current_path = window.location.pathname;
 

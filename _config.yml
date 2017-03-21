@@ -26,11 +26,11 @@ html_injection_items:
   - /ajax_html/site/mailing_list.html
   - /ajax_html/site/follow.html
 
-rss_push_title: The future of this project is in your hands!
-rss_push_description: We're on the brink of something momentous.
-rss_push_date: '2017-03-18'
-rss_push_uuid: MidgetWiskers
-rss_push_link: http://stormcloudsgathering.com/donate
+rss_push_title: StormCloudGathering's redesigned website is up!
+rss_push_description: Kick the tires!
+rss_push_date: '2017-03-20'
+rss_push_uuid: NewSite-equinox-2017
+rss_push_link: http://stormcloudsgathering.com/
 
 
 
@@ -209,4 +209,10 @@ restful:
 
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://pixelclever@bitbucket.org/pixelclever/scg_hexo_deploy.git
+  branch: master
+  message: 'Deploy commit'
+  
+include:
+  - .htaccess

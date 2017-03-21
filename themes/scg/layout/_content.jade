@@ -1,6 +1,10 @@
 // Most variables are declared in _variables.jade
 - if (page.title) {
-- var title = page.title.replace('-', '<br />')
+- var title = page.title
+- if (page.title_text) {
+  - title = page.title_text
+- }
+- var title = title.replace('-', '<br />')
 - }
 - if (page.posts) {
 -   var index = page.posts.length
@@ -23,14 +27,16 @@
     .description.center-align !{page.description}
     - }
     
-    - if (page.next) {
-    - var next_text = "NEXT"
-    - if (page.next_text) {
-    - next_text = page.next_text
+    - if (page.button_link) {
+    - console.log(page.button_link);
+    - var button_text = "NEXT"
+    - if (page.button_text) {
+    - button_text = page.button_text
     - }
     .next_wrap.center-align
-      a(href=page.next class="btn deep-orange accent-3 waves-effect waves-yellow") !{next_text}
+      a(href=page.next_link class="btn deep-orange accent-3 waves-effect waves-yellow") !{button_text}
     - }
+    
     
     - if (page.hide_date == false) {
       .center-align

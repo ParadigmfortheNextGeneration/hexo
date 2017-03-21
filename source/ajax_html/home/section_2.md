@@ -1,8 +1,12 @@
 layout: false
 ---
-## It's Happening!
+## [Syria claims to have shot down Israeli fighter](http://www.reuters.com/article/us-mideast-crisis-syria-israel-idUSKBN16O0WL)
+### [Israel Denies...](http://www.usatoday.com/story/news/world/2017/03/17/missiles-fired-syria-israeli-jets-after-airstrikes/99295642/)
+### [But says next time it will target air defenses? *hmmm...*](http://www.independent.co.uk/news/world/middle-east/israel-syria-destroy-air-defence-systems-minster-avigdor-lieberman-idf-jets-a7637676.html)
+<hr />
+## [Will Trump make it through 4 years?](/president-trump-the-trap-is-set/)
 
-#### [War with N. Korea "on the table"](http://reuters.com)
-#### [Why is Trump snuggling up to Saudi Arabia...*Reuters*](http://reuters.com)
-#### [**Who is known to have helped arm and fund ISIS in Syria?**](http://reuters.com)
-#### [Against Iran... <br /> who is is Syria fighting ISIS? *video*](http://reuters.com)
+https://youtu.be/1MmfCX2H7N8
+
+https://twitter.com/JulianAssange/status/841612345185046528
+
