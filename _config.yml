@@ -106,6 +106,10 @@ feed:
   limit: 20
   hub:  
 
+cdn:
+  enable: true
+  base: http://d3cced9h6ghzi5.cloudfront.net
+
 ## Themes: https://hexo.io/themes/
 theme: scg
 

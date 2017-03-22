@@ -11,7 +11,7 @@
     "hexo-admin": "^2.1.0",
     "hexo-all-minifier": "0.0.14",
     "hexo-autonofollow": "^1.0.0",
-    "hexo-cdnify": "0.0.1",
+    "hexo-custom-cdn": "0.0.1",
     "hexo-custom-autolinker": "^1.0.0",
     "hexo-custom-thumbnails": "0.0.6",
     "hexo-deployer-git": "^0.2.0",
