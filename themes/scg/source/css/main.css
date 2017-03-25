@@ -489,10 +489,10 @@ a#menu_button .fa {
 .sidr h4 {
   font-size:16px;
   font-family: "roboto" !important;
-  font-weight: 200 !important;
+  font-weight: bold !important;
 }
 .sidr h4 a {
-  color:#1e88e5;
+  color:#ff3d00;
 }
 .sidr h4 a:hover {
   text-decoration: underline;
