@@ -498,7 +498,7 @@ a#menu_button .fa {
   text-decoration: underline;
   color:#ff3d00;
 }
-.next {display: none;}
+.menu-inner .next {display: none;}
 
 .menu-inner {
   padding:20px;
@@ -576,7 +576,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .select-wrapper span.caret {
   right:10px;
 }
-
+select.browser-default {
+  margin-bottom: 10px;
+}
 .links-wrap,
 .page-content .injection_html_item {
   border-top: 6px solid #000;
@@ -734,6 +736,8 @@ ul.tag-list {
   background:#ff3d00;
   color: white;
   font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 .pagination span {
   background: #1e88e5;
@@ -847,7 +851,7 @@ ul.tag-list {
 }
 
 @media screen and (max-width: 640px) {
-  .follow {
+  .call-to-action .follow {
     display:none;
   }
   .page-content h1 {

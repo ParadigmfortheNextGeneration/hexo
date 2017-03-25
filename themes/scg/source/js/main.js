@@ -148,13 +148,14 @@ var initializeEvents = function() {
     var social_open = function() { 
       $(youtubesubscribescript).insertBefore( "#side-subscribe" );
       $(twitterscript).insertBefore( "#side-subscribe" );
-      if ($('body').hasClass('fb_loaded')) {
-        FB.XFBML.parse(document.getElementById('result'));
-        //code
-      }
-      else {
-        $('body').prepend(facebookscript).addClass('fb_loaded');
-      }  
+      //if ($('body').hasClass('fb_loaded')) {
+      //  if (FB) {
+      //    FB.XFBML.parse(document.getElementById('result'));
+      //  }
+      //}
+      //else {
+      $('body').prepend(facebookscript).addClass('fb_loaded');
+      //}  
     }
     //var current_path = window.location.pathname;
 
