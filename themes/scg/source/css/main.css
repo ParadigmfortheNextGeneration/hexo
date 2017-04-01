@@ -293,16 +293,46 @@ h4 {
   font-size: 20px;
 }
 
-h1.page-title {
-  margin-top:50px;
-  font-size:5.5em;
+.container .page-content h1,
+.container .page-content h2,
+.container .page-content h3,
+.container .page-content h4 {
   text-align: center;
 }
+.container .page-content h1.left-align,
+.container .page-content h2.left-align,
+.container .page-content h3.left-align,
+.container .page-content h4.left-align {
+  text-align: left;
+}
+.container .page-content h1.right-align,
+.container .page-content h2.right-align,
+.container .page-content h3.right-align,
+.container .page-content h4.right-align {
+  text-align: right;
+}
+
+
+h1.page-title {
+  margin-top:50px;
+  font-size:55px;
+  text-align: center;
+}
+
 h1.page-title a {
   color:#fff;
 }
 h1.page-title a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #ff3d00;
+}
+
+.title-divider {
+  display:block;
+  color:#1e88e5;
+}
+h1.page-title a:hover .title-divider {
+  text-decoration: none;
 }
 .page-content h1 {
   
@@ -322,6 +352,25 @@ h3.post-title {
   position: absolute;
   left:-55px;
   margin-left:50%;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.panel h4 {
+  text-align: left;
+}
+.panel.center-align h1,
+.panel.center-align h2,
+.panel.center-align h3,
+.panel.center-align h4 {
+  text-align: center;
+}
+.panel.right-align h1,
+.panel.right-align h2,
+.panel.right-align h3,
+.panel.right-align h4 {
+  text-align: right;
 }
 
 .panel h1 a,
@@ -684,7 +733,7 @@ strong {
   box-sizing: border-box !important;
 }
 .full-width-button {
-  width:100%;
+  width:80%;
 }
 .injection_html {
   visibility: hidden;
@@ -802,6 +851,9 @@ ul.tag-list {
 .tweet_processed .tweet_url {
   display:none;
 }
+.fb_item_processed {
+  max-width: 100% !important;
+}
 .fb_url {
   display:block;
 }
@@ -896,11 +948,14 @@ ul.tag-list {
     line-height: 1.3em;
   }
   
+  h1.page-title {
+    font-size:26px;
+  }
   h1 {
-  font-size:45px;
+  font-size:26px;
   }
   h2 {
-    font-size:35px;
+    font-size:25px;
   }
   h3 {
     font-size: 21px;

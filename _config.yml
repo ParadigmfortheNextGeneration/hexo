@@ -2,6 +2,13 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#rss_push_title: "Congress votes to allow ISP's to sell your browsing history, new Wikileaks Revelations and more"
+#rss_push_description: Wikileaks new data dump exposes CIA dirty tricks. Will Trump sign the new law allowing service providers to sell your data?
+#rss_push_date: '2017-03-31'
+#rss_push_uuid: ISP-Law-Wikileaks-2017
+#rss_push_link: http://stormcloudsgathering.com/
+
+
 # Site
 title: StormCloudsGathering
 subtitle:
@@ -26,11 +33,7 @@ html_injection_items:
   - /ajax_html/site/mailing_list.html
   - /ajax_html/site/follow.html
 
-#rss_push_title: StormCloudGathering's redesigned website is up!
-#rss_push_description: Kick the tires!
-#rss_push_date: '2017-03-20'
-#rss_push_uuid: NewSite-equinox-2017
-#rss_push_link: http://stormcloudsgathering.com/
+
 
 
 
@@ -107,7 +110,7 @@ feed:
   hub:  
 
 cdn:
-  enable: true
+  enable: false
   base: http://d3cced9h6ghzi5.cloudfront.net
 
 ## Themes: https://hexo.io/themes/

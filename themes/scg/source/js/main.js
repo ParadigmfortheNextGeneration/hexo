@@ -1,5 +1,10 @@
 var initializeEvents = function() {
   var window_width = $(window).innerWidth();
+  var window_height = $(window).innerHeight();
+  if (window_height <= 400) {
+    $('.share_wrap_outer').hide();
+  }
+  //share_wrap_outer
   $("h1.page-title").fitText(1.3, { minFontSize: '20px', maxFontSize: '80px' });
   $('select').material_select();
   
@@ -96,6 +101,8 @@ var initializeEvents = function() {
     } 
     
     var fb_load = function(item) {
+      var fb_post_width = window_width * .9;
+      
       $(item).addClass('fb_item_processed').removeClass('fb_post_wrap');
       if ($('body').hasClass('fb_loaded')) {
         FB.XFBML.parse(document.getElementById('result'));

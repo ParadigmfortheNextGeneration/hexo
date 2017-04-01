@@ -1,10 +1,10 @@
 ---
 title: StormCloudsGathering
-title_text:
-title_link:
-button_link: 
-#button_text: 'What you need to know <span class="fa fa-play"></span>'
-hide_title: true
+title_text: Trump's Stealth Partition of Syria - "Safe Zones" and the Siege of Raqqa
+title_link: /trumps-stealth-partition-of-syria
+button_link: /trumps-stealth-partition-of-syria
+button_text: 'READ MORE <span class="fa fa-play"></span>'
+hide_title: false
 hide_date: true
 #links:
 # - Paradigm for the Next Generation||/paradigm-for-the-next-generation
@@ -21,6 +21,13 @@ html_injection_disable: true
 center: false
 no_container: true
 ---
+<div class="container">
+  <div class="row">
+    <div class="col l12 center-align top-panel panel">
+      <div class="injection_html" data-injection-html="/ajax_html/home/top_panel.html"></div>
+    </div>
+  </div>    
+</div>
 <div class="container">
   <div class="row">
     <div class="col l6 m6 s12 front-left panel">

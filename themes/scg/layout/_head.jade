@@ -38,27 +38,27 @@ meta(charset='UTF-8')
 meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 
 title=head_title
-meta(name="og:title" content=og_title)
-meta(name="og:site_name" content=config.title)
-meta(name="og:url" content=page.permalink)
-meta(name='og:description', content= page.description ? page.description : config.meta_description)
-meta(name='fb:app_id', content=theme.fb_app_id)
-meta(name='fb:admins', content=theme.fb_admins)
-meta(name='og:type' content='article')
+meta(property="og:title" content=og_title)
+meta(property="og:site_name" content=config.title)
+meta(property="og:url" content=page.permalink)
+meta(property='og:description', content= page.description ? page.description : config.meta_description)
+meta(property='fb:app_id', content=theme.fb_app_id)
+meta(property='fb:admins', content=theme.fb_admins)
+meta(property='og:type' content='article')
 - if (page.largeThumb) {
-  meta(name='og:image', content=config.url+page.largeThumb)
+  meta(property='og:image', content=config.url+page.largeThumb)
   meta(name='twitter:image', content=config.url+page.largeThumb)
 - }
 - else if (page.breaking) {
-  meta(name='og:image', content=config.url+theme.breaking_thumb)
+  meta(property='og:image', content=config.url+theme.breaking_thumb)
   meta(name='twitter:image', content=config.url+theme.breaking_thumb)
 - }
 - else {
-  meta(name='og:image', content=config.url+theme.default_thumb)
+  meta(property='og:image', content=config.url+theme.default_thumb)
   meta(name='twitter:image', content=config.url+theme.default_thumb)
 - }
 
-meta(name='twitter:card', content='summary')
+meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:site', content= '@'+ theme.twitter)
 meta(name='twitter:title', content=og_title)
 meta(name='twitter:description', content= page.description ? page.description : config.meta_description)

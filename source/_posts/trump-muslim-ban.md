@@ -13,7 +13,7 @@ description: The mainstream narrative on Trump's immigration ban is intentionall
 permalink: trump-muslim-ban
 links:
 links_title:
-thumbnail: /images/thumbs/trump-muslim-ban.png
+thumbnail: /images/thumbs/trump-muslim-immigration-ban.jpg
 video: https://www.youtube.com/watch?v=AYLkyDO_Vo8
 featured_image: 
 slideshow:

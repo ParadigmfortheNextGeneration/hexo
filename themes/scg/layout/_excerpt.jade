@@ -11,7 +11,7 @@
       img(class="lazy", data-src=post.smallThumb)
   - }
   div(class=rightclass)
-    h3.post-title
+    h3.post-title.left-align
       a(href="/"+post.path) #{post.title}
     time(datetime=date_xml(post.date), itemprop="datePublished")<span class="fa fa-clock-o"></span> <span>#{date(post.date, 'MMMM DD, YYYY')}</span>
     - if ((post.push_update || post.show_update) == true) {

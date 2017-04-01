@@ -4,7 +4,7 @@
 - if (page.title_text) {
   - title = page.title_text
 - }
-- var title = title.replace('-', '<br />')
+- var title = title.replace('-', '<span class="title-divider">-</span>')
 - }
 - if (page.posts) {
 -   var index = page.posts.length
@@ -28,13 +28,12 @@
     - }
     
     - if (page.button_link) {
-    - console.log(page.button_link);
     - var button_text = "NEXT"
     - if (page.button_text) {
     - button_text = page.button_text
     - }
     .next_wrap.center-align
-      a(href=page.next_link class="btn deep-orange accent-3 waves-effect waves-yellow") !{button_text}
+      a(href=page.button_link class="btn deep-orange accent-3 waves-effect waves-yellow") !{button_text}
     - }
     
     
