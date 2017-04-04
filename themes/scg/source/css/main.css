@@ -76,7 +76,7 @@ ol li {counter-increment: li}
 
 .clearer {
   clear: both;
-  height: 1px;
+  height: 0px;
 }
 .rounded {
   -webkit-border-radius: 3px;
@@ -322,18 +322,20 @@ h1.page-title {
 h1.page-title a {
   color:#fff;
 }
-h1.page-title a:hover {
-  text-decoration: none;
-  color: #ff3d00;
+h1.page-title a:hover,
+.white-text h1 a:hover,
+.white-text h2 a:hover,
+.white-text h3 a:hover,
+.white-text h4 a:hover{
+  text-decoration: none !important;
+  color: #ff3d00 !important;
 }
 
 .title-divider {
   display:block;
   color:#1e88e5;
 }
-h1.page-title a:hover .title-divider {
-  text-decoration: none;
-}
+
 .page-content h1 {
   
 }
@@ -379,6 +381,15 @@ h3.post-title {
 .panel h4 a {
   color:#000 !important;
 }
+.white-text h1 a,
+.white-text h2 a,
+.white-text h3 a,
+.white-text h4 a {
+  -webkit-text-stroke: 1px black;
+   color: #fff !important;
+   text-shadow: #000 0px 0px 3px;
+   -webkit-font-smoothing: antialiased;
+}
 .panel h1 a strong,
 .panel h2 a strong,
 .panel h3 a strong,
@@ -413,7 +424,20 @@ h3.post-title {
 .panel .video_wrapper_outer {
   margin-bottom:20px !important;
 }
-
+.panel h1:last-child,
+.panel h2:last-child,
+.panel h3:last-child,
+.panel h4:last-child {
+  margin:0 !important;
+}
+.panel.rounded {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.top-panel {
+  padding: 30px 0 !important;
+}
+}
 /*.front-left h1,
 .front-left h2,
 .front-left h3,
@@ -713,6 +737,9 @@ strong {
 .content {
   padding:30px 0;
   position: relative;
+}
+.no_container_wrapper .content {
+  padding:0;
 }
 
 .page-content > p:first-child:first-letter {

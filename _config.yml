@@ -2,11 +2,11 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-#rss_push_title: "Congress votes to allow ISP's to sell your browsing history, new Wikileaks Revelations and more"
-#rss_push_description: Wikileaks new data dump exposes CIA dirty tricks. Will Trump sign the new law allowing service providers to sell your data?
-#rss_push_date: '2017-03-31'
-#rss_push_uuid: ISP-Law-Wikileaks-2017
-#rss_push_link: http://stormcloudsgathering.com/
+rss_push_title: "Trump signs law to allow ISP's to sell your browsing history. Mattis begins sabre rattling with Russia, and New police state measures to be implemented by TSA"
+rss_push_description: Get the news that matters on our new front page. 
+rss_push_date: '2017-04-04'
+rss_push_uuid: ISP-Law-Wikileaks-2017
+rss_push_link: http://stormcloudsgathering.com/
 
 
 # Site

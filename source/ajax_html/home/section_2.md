@@ -1,6 +1,6 @@
 layout: false
 ---
-## [Wikileaks new Docs: Marble - CIA tools for Disguising hacks as Russian, Chinese, Iranian and More](https://wikileaks.org/vault7/#Marble%20Framework)
+### [Wikileaks new Docs: Marble - CIA tools for Disguising hacks as Russian, Chinese, Iranian and More](https://wikileaks.org/vault7/#Marble%20Framework)
 <blockquote>The source code shows that Marble has test examples not just in English but also in Chinese, Russian, Korean, Arabic and Farsi. This would permit a forensic attribution double game, for example by pretending that the spoken language of the malware creator was not American English, but Chinese, but then showing attempts to conceal the use of Chinese, drawing forensic investigators even more strongly to the wrong conclusion</blockquote>
 #### [Meet the U.S. Contractor that helped the CIA hack your computer and phone](https://theintercept.com/2017/03/30/meet-the-midwestern-contractor-that-appears-hundreds-of-times-in-the-cia-wikileaks-dump/)
 #### [Wikileaks New Document Dump <br /> Shows How CIA Compromised Apple Products]( https://wikileaks.org/vault7/darkmatter/releases/)

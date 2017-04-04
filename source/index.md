@@ -21,13 +21,9 @@ html_injection_disable: true
 center: false
 no_container: true
 ---
-<div class="container">
-  <div class="row">
-    <div class="col l12 center-align top-panel panel">
-      <div class="injection_html" data-injection-html="/ajax_html/home/top_panel.html"></div>
-    </div>
-  </div>    
-</div>
+
+[topsection](/_html/site/featured_secondary.html)
+
 <div class="container">
   <div class="row">
     <div class="col l6 m6 s12 front-left panel">

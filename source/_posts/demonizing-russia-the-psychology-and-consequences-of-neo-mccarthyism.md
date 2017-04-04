@@ -10,7 +10,7 @@ permalink: ''
 tags: [psychology,russia,trump,mccarthyism]
 category: [psychology]
 hash_tag: ''
-thumbnail: '/images/thumbs/trump-putin-conspiracy.jpg'
+thumbnail: '/images/thumbs/psychology-trump-putin-conspiracy.jpg'
 video: ''
 featured_image: ''
 enable_parallax: false

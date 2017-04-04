@@ -13,13 +13,14 @@
 - }
 
 
-
+- var content_container_wrapper_class = "container_wrapper"
 - var content_container_class = "container"
 - var content_row_class = "row"
 - var content_class = "col l12"
 - var aside_class   = "col l12"
 
 - if (page.no_container == true) {
+  - content_container_wrapper_class = "no_container_wrapper"
   - content_container_class = "no_container"
   - content_row_class = "no_row"
   - var content_class = "no_column"

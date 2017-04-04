@@ -1,7 +1,10 @@
 layout: false
 ---
-## [Congress Votes to allow telecoms to sell your browsing history!](http://www.nbcnews.com/tech/tech-news/want-get-look-congress-internet-browsing-history-n740611)
-### [**Trump says will sign**](https://www.wsj.com/articles/with-washingtons-blessing-telecom-giants-can-mine-your-web-history-1490869801)
+## [**Trump to demand foreigners hand over their phone, social-media, and email passwords to get into the US** <br /> *Includes Allies France/Germany*](https://www.wsj.com/articles/trump-administration-considers-far-reaching-steps-for-extreme-vetting-1491303602)
+### [It already started: NASA engineer forced to unlock his phone at border](https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/)
+<hr />
+## [**Trump signs Law Allowing Telecoms to sell your browser history!**]()
+### [Congress Passes](http://www.nbcnews.com/tech/tech-news/want-get-look-congress-internet-browsing-history-n740611)
 <hr />
 ### [Healthcare fallout: Trump declares war on Freedom Caucus](https://www.yahoo.com/news/trump-takes-aim-republican-conservatives-must-fight-them-132232166--business.html)
 <hr />

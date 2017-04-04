@@ -10,7 +10,7 @@ permalink: ''
 tags: [trump,syria,raqqa,russia,geopolitics,assad]
 category: [geopolitics]
 hash_tag: ''
-thumbnail: '/images/thumbs/trump-stealth-partition-syria-raqqa.jpg'
+thumbnail: '/images/thumbs/trump-stealth-partition-syria-raqqa-safe-zones.jpg'
 video: ''
 featured_image: ''
 enable_parallax: false
