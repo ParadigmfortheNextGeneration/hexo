@@ -1,10 +1,10 @@
 ---
 title: StormCloudsGathering
-title_text: Trump's Stealth Partition of Syria - "Safe Zones" and the Siege of Raqqa
-title_link: /trumps-stealth-partition-of-syria
-button_link: /trumps-stealth-partition-of-syria
-button_text: 'READ MORE <span class="fa fa-play"></span>'
-hide_title: false
+#title_text: Trump's Stealth Partition of Syria - "Safe Zones" and the Siege of Raqqa
+#title_link: /trumps-stealth-partition-of-syria
+#button_link: /trumps-stealth-partition-of-syria
+#button_text: 'READ MORE <span class="fa fa-play"></span>'
+hide_title: true
 hide_date: true
 #links:
 # - Paradigm for the Next Generation||/paradigm-for-the-next-generation
@@ -13,16 +13,17 @@ hide_date: true
 links_title:
 # video: https://www.youtube.com/watch?v=1MmfCX2H7N8
 description: We need more than a change in the system.
-parallax_html: We need a new way, a new [Paradigm](/Paradigm-for-the-Next-Generation)
+# parallax_html: We need a new way, a new [Paradigm](/Paradigm-for-the-Next-Generation)
 hide_description: true
 # featured_image: /images/abstract/Hear-No-Evil-See-No-Evil-Speak-No-Evil.jpg
-enable_parallax: true
+# enable_parallax: true
 html_injection_disable: true
 center: false
 no_container: true
 ---
 
-[topsection](/_html/site/featured_secondary.html)
+[stealthpartition](/_html/panels/stealth_partition_syria.html)
+[neo-mccarthyism](/_html/panels/demonizing_russia.html)
 
 <div class="container">
   <div class="row">

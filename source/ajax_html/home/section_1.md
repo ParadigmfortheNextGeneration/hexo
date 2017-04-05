@@ -1,6 +1,6 @@
 layout: false
 ---
-## [**Trump to demand foreigners hand over their phone, social-media, and email passwords to get into the US** <br /> *Includes Allies France/Germany*](https://www.wsj.com/articles/trump-administration-considers-far-reaching-steps-for-extreme-vetting-1491303602)
+## [**Trump to demand foreigners hand over their phone, social-media, and email passwords to get into the U.S.** <br /> *Includes Allies France/Germany*](https://www.wsj.com/articles/trump-administration-considers-far-reaching-steps-for-extreme-vetting-1491303602)
 ### [It already started: NASA engineer forced to unlock his phone at border](https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/)
 <hr />
 ## [**Trump signs Law Allowing Telecoms to sell your browser history!**]()
@@ -10,6 +10,7 @@ layout: false
 <hr />
 ### [War Between U.S. And China Brewing in S. China Sea? *TheAntiMedia*](http://theantimedia.org/war-us-s-china-sea/)
 ## [Former CIA director: U.S. Must prepare to use Preemptive Nuclear Strike](http://thehill.com/blogs/pundits-blog/defense/326094-how-north-korea-could-kill-up-to-90-percent-of-americans-at-any)
+#### [Congress moves to designate N.Korea as state sponsor of terror](http://thehill.com/blogs/floor-action/house/327106-house-votes-to-move-toward-designating-north-korea-as-state-sponsor)
 #### [War with N. Korea "on the table"](http://www.usatoday.com/story/news/world/2017/03/17/tillerson-visits-demilitarized-zone-between-north-and-south-korea/99295270/)
 #### [China warns Trump against THAAD deployment...<br/> **will side with N. Korea**](https://www.thesun.co.uk/news/3028656/china-threatens-measures-us-missile-system-deployed-south-korea/)
 <hr />
